@@ -1,0 +1,9 @@
+{
+    "test_page": "https://miso4103-aramirezr2.ghost.io/ghost/#/signin",
+    "test_page_members": "https://miso4103-aramirezr2.ghost.io/ghost/#/members",
+    "test_page_members_new": "https://miso4103-aramirezr2.ghost.io/ghost/#/members/new",
+    "test_login_email": "aramirezr2@uniandes.edu.co",
+    "test_login_password": "Pruebas2021@",
+    "test_member_name": "Andres Ramirez",
+    "test_member_email": "pruebas@miso4103.com"
+}
