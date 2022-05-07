@@ -8,9 +8,8 @@
 ## Pruebas con Cypress:
 ### Instrucciones para ejecutar los escenarios:
 
-### Resultados:
 
 ## Pruebas con Kraken:
 ### Instrucciones para ejecutar los escenarios:
 
-### Resultados:
+
