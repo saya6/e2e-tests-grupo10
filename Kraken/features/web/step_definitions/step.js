@@ -1,15 +1,15 @@
 const { Given, When, Then } = require('@cucumber/cucumber');
 var {expect} = require('chai');
 
-When('I enter email {string}', async function (email) {
-    let element = await this.driver.$('#ember7');
-    return await element.setValue(email);
-});
+// When('I enter email {string}', async function (email) {
+//     let element = await this.driver.$('#ember7');
+//     return await element.setValue(email);
+// });
 
-When('I enter password {string}', async function (password) {
-    let element = await this.driver.$('#ember9');
-    return await element.setValue(password);
-});
+// When('I enter password {string}', async function (password) {
+//     let element = await this.driver.$('#ember9');
+//     return await element.setValue(password);
+// });
 
 When('I click next', async function() {
     let element = await this.driver.$('#ember11');
