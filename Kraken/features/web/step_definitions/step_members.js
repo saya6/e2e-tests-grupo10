@@ -10,6 +10,10 @@ When('I click members-new-member', async function() {
     let element = await this.driver.$('#ember49');
     return await element.click();
 })
+When('I click owner-new-member', async function() {
+    let element = await this.driver.$('/html/body/div[2]/div/main/section/section/div/button');
+    return await element.click();
+})
 When('I enter new member name {kraken-string}', async function (email) {
     let element = await this.driver.$('#member-name');
     return await element.setValue(email);
