@@ -8,6 +8,10 @@
 * Visualizar lista de miembros.
 * Editar un miembro.
 * Eliminar un miembro.
+* Crear tag
+* Actualizar tag
+* Listar tags
+* Eliminar tag
 
 ## Escenarios de Pruebas:
 ### Posts:
@@ -28,12 +32,20 @@
 * Intentar editar un miembro con un correo existente.
 * Intentar editar un miembro con una nota muy larga.
 
+### Tags:
+* Crear un tag de manera correcta.
+* Crear un tag de manera incorrecta - sin nombre.
+* Actualziar un tag de manera correcta.
+* Actualziar un tag de manera incorrecta - sin nombre.
+* Eliminar un tag existente.
 
 ## Pruebas con Cypress:
 ### Instrucciones para ejecutar los escenarios:
+`make run-cypress-test`
 
 
 ## Pruebas con Kraken:
 ### Instrucciones para ejecutar los escenarios:
+`make run-kraken-test`
 
 
