@@ -2,7 +2,7 @@ Feature: Ghost tags
 
 @user1 @web
 Scenario: Como usuario inicio sesion y y creo un tag de manera correcta
-    Given I navigate to page "http://localhost:2368/ghost/"
+    Given I navigate to page "<test_page>"
     And I wait for 5 seconds
     When I enter email "<test_login_email>"
     And I wait for 1 seconds

@@ -2,13 +2,13 @@ Feature: Ghost posts
 
 @user1 @web
 Scenario: Crear post
-  Given I navigate to page "<URL_GHOST_ADMIN>"
+  Given I navigate to page "<test_page>"
   And I wait for 5 seconds
   When I enter email "<test_login_email>"
   And I wait for 1 seconds
   And I enter password "<test_login_password>"
   And I wait for 1 seconds
-  And I click login
+  And I click signin
   And I wait for 4 seconds
   And I click post option
   And I wait for 2 seconds
