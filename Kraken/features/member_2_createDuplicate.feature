@@ -1,7 +1,7 @@
 Feature: Ghost — Nuevo Miembro [Exitoso]
 
 @user2 @web
-Scenario: Como usuario administrador, siguiendo la prueba del usuario 1. Debo esperar que el termine de hacer su creación de usuario y posteriormente ingresar y validar que al intentar crear un miembro con el mismo correo la aplicación me muestre un error "Skip to main content. Validation error, cannot save member. Member already exists. Attempting to add member with existing email address" — Then we change the email and try to upload the new user with valid email.
+Scenario: [2 — Member] — Como usuario administrador, siguiendo la prueba del usuario 1. Debo esperar que el termine de hacer su creación de usuario y posteriormente ingresar y validar que al intentar crear un miembro con el mismo correo la aplicación me muestre un error "Skip to main content. Validation error, cannot save member. Member already exists. Attempting to add member with existing email address" — Then we change the email and try to upload the new user with valid email.
   Given I navigate to page "<test_page>"
   And I wait for 1 seconds
   When I enter email "<test_login_email>"

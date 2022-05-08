@@ -1,7 +1,7 @@
 Feature: Ghost — Nuevo Miembro [Exitoso]
 
 @user1 @web
-Scenario: Como usuario administrador ingreso sesión y creo un nuembro correctamente (agregando email y nombre) y posteriormente ver el usuario creado en el listado de usuarios.
+Scenario: [0 — Member] — Como usuario administrador ingreso sesión y creo un nuembro correctamente (agregando email y nombre) y posteriormente ver el usuario creado en el listado de usuarios.
   Given I navigate to page "<test_page>"
   And I wait for 1 seconds
   When I enter email "<test_login_email>"
