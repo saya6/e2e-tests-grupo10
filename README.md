@@ -1,8 +1,13 @@
 ## Listado de escenarios de pruebas (20) y funcionalidades (5):
 ### Funcionalidades:
-* Crear posts
-* Eliminar posts
-* Visualizar el previo de un post
+* Iniciar sesión.
+* Crear posts.
+* Eliminar posts.
+* Visualizar el previo de un post.
+* Crear un miembro.
+* Visualizar lista de miembros.
+* Editar un miembro.
+* Eliminar un miembro.
 
 ## Escenarios de Pruebas:
 ### Posts:
@@ -13,10 +18,16 @@
 * Visualizar el previo de un post
 
 ### Members:
-* Crear un miembro exitosamente
-* Crear un miembro con correo existente (Duplicado)
+* Crear un miembro exitosamente.
+* Crear un miembro con correo existente (Duplicado).
 * Eliminar un miembro y cancelar.
-* Eliminar un miembro exitosamente,
+* Eliminar un miembro exitosamente.
+* Editar un miembro exitosamente.
+* Intentar editar un miembro con un correo vacío.
+* Intentar editar un miembro con un correo invalido.
+* Intentar editar un miembro con un correo existente.
+* Intentar editar un miembro con una nota muy larga.
+
 
 ## Pruebas con Cypress:
 ### Instrucciones para ejecutar los escenarios:
