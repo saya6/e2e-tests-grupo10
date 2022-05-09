@@ -8,17 +8,17 @@ describe('Escenarios', () => {
     
     cy.fixture('configuration').then((configuration)  => {
       cy.visit(configuration.URL_GHOST_ADMIN)
-      cy.wait(3000)
+      cy.wait(4000)
 
       var email = configuration.USERNAME
       var password = configuration.PASSWORD
 
       doLogin(cy, email, password);
-      cy.wait(3000);
+      cy.wait(4000);
       cy.get("a[href='#/tags/']").click();
-      cy.wait(3000);
+      cy.wait(4000);
       cy.get('a[href="#/tags/new/"]').click();
-      cy.wait(3000);
+      cy.wait(4000);
 
       let tag = "PruebaTag" + getRandomInt(1, 10000);
       writeTag(cy, tag);
@@ -150,10 +150,11 @@ describe('Escenarios', () => {
       cy.wait(5000);
       
       cy.get("a[href='#/tags/']").first().click();
+      cy.wait(300)
       validateTag(cy, tag);
 
       cy.get('ol > li').find('a:contains("' + tag + '")').click();
-
+      cy.wait(3000)
       let tagActualizado = "";
       writeTag(cy, tagActualizado);
       cy.wait(5000);
@@ -176,6 +177,7 @@ function getRandomInt(min, max) {
 function doLogin(cy, email, password ){
   cy.get('input[class="email ember-text-field gh-input ember-view"]').type(email)
   cy.get('input[class="password ember-text-field gh-input ember-view"]').type(password)
+  cy.wait(1000)
   cy.get('button[class="login gh-btn gh-btn-login gh-btn-block gh-btn-icon js-login-button ember-view"]').click()
 }
 
@@ -192,16 +194,18 @@ if(text === ''){
 } else{
   cy.get(selector).type(text);
 }
-
+cy.wait(1000)
 cy.get('button[class="gh-btn gh-btn-primary gh-btn-icon ember-view"]').click();
+cy.wait(4000)
 }
 
 function validateTag(cy, tagName){
   cy.get('ol > li').find('a:contains("' + tagName + '")').should('have.length', 1);
+  cy.wait(1000)
 }
 
 function validateDeletedTag(cy, title ){
 cy.get('ol > li').find('a:contains("' + title + '")').should('have.length', 0);
-
+cy.wait(1000)
 }
 
