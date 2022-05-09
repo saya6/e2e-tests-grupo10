@@ -46,3 +46,7 @@ When('I click members-open-first-configButton_delete_delete', async function() {
     let element = await this.driver.$('/html/body/div[5]/div/div/div/div/div[2]/section/div[2]/button[2]');
     return await element.click();
 })
+When('I check the user {kraken-string} appears on the list', async function(userEmail) {
+    let element = await this.driver.$("/html/body/div[2]/div/main/section/section/div/table/tbody/tr/a/div/div/p").getText();
+    expect(element).to.equal(userEmail)
+});
