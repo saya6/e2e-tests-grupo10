@@ -1,3 +1,5 @@
+/// <reference types="cypress" />
+
 describe('Testing member editing options', () => {
     
     beforeEach(() => {
@@ -7,7 +9,7 @@ describe('Testing member editing options', () => {
       
         cy.fixture('configuration').then((configuration)  => {
             cy.visit(configuration.URL_GHOST_ADMIN)
-            cy.wait(3000)
+            cy.wait(5000)
     
             var email = configuration.USERNAME
             var password = configuration.PASSWORD
@@ -25,6 +27,7 @@ describe('Testing member editing options', () => {
             checkIfMemberExists(cy, email2)
             deleteMember(cy, email2)
             checkIfMemberNotExists(cy, email2) 
+            cy.wait(3000)
         })
 
     })
@@ -34,7 +37,7 @@ describe('Testing member editing options', () => {
         
         cy.fixture('configuration').then((configuration)  => {
             cy.visit(configuration.URL_GHOST_ADMIN)
-            cy.wait(3000)
+            cy.wait(5000)
             
             var email = configuration.USERNAME
             var password = configuration.PASSWORD
@@ -52,6 +55,7 @@ describe('Testing member editing options', () => {
             checkIfMemberExists(cy, email1)
             deleteMember(cy, email1)
             checkIfMemberNotExists(cy, email1)
+            cy.wait(3000)
         })
 
     })
@@ -61,7 +65,7 @@ describe('Testing member editing options', () => {
         
         cy.fixture('configuration').then((configuration)  => {
             cy.visit(configuration.URL_GHOST_ADMIN)
-            cy.wait(3000)
+            cy.wait(5000)
             
             var email = configuration.USERNAME
             var password = configuration.PASSWORD
@@ -80,6 +84,7 @@ describe('Testing member editing options', () => {
             checkIfMemberExists(cy, email1)
             deleteMember(cy, email1)
             checkIfMemberNotExists(cy, email1)
+            cy.wait(3000)
         })
 
     })
@@ -88,7 +93,7 @@ describe('Testing member editing options', () => {
         
         cy.fixture('configuration').then((configuration)  => {
             cy.visit(configuration.URL_GHOST_ADMIN)
-            cy.wait(3000)
+            cy.wait(5000)
             
             var email = configuration.USERNAME
             var password = configuration.PASSWORD
@@ -114,7 +119,7 @@ describe('Testing member editing options', () => {
             checkIfMemberExists(cy, email2)
             deleteMember(cy, email2)
             checkIfMemberNotExists(cy, email2)
-            cy.wait(5000)
+            cy.wait(3000)
         })
 
     })
@@ -125,7 +130,7 @@ describe('Testing member editing options', () => {
         
         cy.fixture('configuration').then((configuration)  => {
             cy.visit(configuration.URL_GHOST_ADMIN)
-            cy.wait(3000)
+            cy.wait(5000)
             
             var email = configuration.USERNAME
             var password = configuration.PASSWORD
@@ -144,7 +149,7 @@ describe('Testing member editing options', () => {
             checkIfMemberExists(cy, email1)
             deleteMember(cy, email1)
             checkIfMemberNotExists(cy, email1)
-            cy.wait(5000)
+            cy.wait(3000)
         })
 
     })
@@ -156,7 +161,7 @@ function doLogin(cy, email, password ){
     cy.get('input[name="identification"]').type(email)
     cy.get('input[name="password"]').type(password)
     cy.get('button:contains("Sign in")').click()
-    cy.wait(2000)
+    cy.wait(4000)
 }
 
 function createMember(cy, name, email, note) {
@@ -199,6 +204,7 @@ function goToMember(cy, email) {
 function checkIfMemberExists(cy, email) {
     clickOn(cy, 'a', 'Members')
     cy.get('a:contains("' + email + '")').should('have.length', 1)
+    cy.wait(1000)
 }
 
 function checkIfMemberNotExists(cy, email) {
@@ -206,22 +212,27 @@ function checkIfMemberNotExists(cy, email) {
     cy.get('a').each((value)=>{
         cy.wrap(value).should('not.contains.text', email)
     })
+    cy.wait(1000)
 }
 
 function checkIfEmptyMailError(cy) {
     checkErrorInField(cy, 'input', 'email', 'Please enter an email.')
+    cy.wait(1000)
 }
 
 function checkIfWrongMailError(cy) {
     checkErrorInField(cy, 'input', 'email', 'Invalid Email.')
+    cy.wait(1000)
 }
 
 function checkIfLongNoteError(cy) {
     checkErrorInField(cy, 'textArea', 'note', 'Note is too long.')
+    cy.wait(1000)
 }
 
 function checkIfEmailRepetedError(cy) {
     checkGeneralError(cy, 'Validation error, cannot edit member. Member already exists. Attempting to edit member with existing email address')
+    cy.wait(1000)
 }
 
 function checkErrorInField(cy, type, field, errorMsg) {
@@ -235,17 +246,17 @@ function checkGeneralError(cy, errorMsg) {
 function cancelEdit(cy){
     clickOn(cy, 'a', 'Members')
     clickOnInModal(cy, 'button', 'Leave')
-    cy.wait(2000)
+    cy.wait(4000)
 }
 
 function clickOn(cy, type, name) {
     cy.get(type + ':contains("' + name + '")').first().click(); 
-    cy.wait(2000)
+    cy.wait(4000)
 }
 
 function clickOnInModal(cy, type, name){
     cy.get('.modal-content').find(type+':contains("' + name + '")').click()
-    cy.wait(2000)
+    cy.wait(4000)
 }
 
 function fillField(cy, type, name, value){
@@ -253,4 +264,5 @@ function fillField(cy, type, name, value){
     if(value) {
         cy.get(type + '[name="' + name + '"]').type(value, { force: true })
     }
+    cy.wait(1000)
 }
