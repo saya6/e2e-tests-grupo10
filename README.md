@@ -60,6 +60,8 @@ Para facilitar las pruebas se agregó la plataforma Ghost a la siguiente URL htt
 - NodeJS v16.14.2
 - Libreria de kraken instalada en modo global (npm install -g kraken-node)
 - make
+- En el caso de MacOS, se debe tener instalado ADB. Usando homebrew se instala de la siguiente manera: brew install android-platform-tools
+
 #### Ejecucion
 `make run-kraken-test`
 
