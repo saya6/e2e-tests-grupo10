@@ -35,8 +35,6 @@ Scenario: [2 — Member] — Como usuario administrador, siguiendo la prueba del
   And I click members-new-save
   And I wait for 1 seconds
   Given I navigate to page "<test_page_members>"
-  And I wait for 1 seconds
-  And I check the user "<test_member_email>" appears on the list
   And I wait for 5 seconds
   And I click members-open-first
   And I wait for 1 seconds
@@ -47,8 +45,6 @@ Scenario: [2 — Member] — Como usuario administrador, siguiendo la prueba del
   And I click members-open-first-configButton_delete_delete
   And I wait for 1 seconds
   Given I navigate to page "<test_page_members>"
-  And I wait for 1 seconds
-  And I check the user "<test_member_email2>" appears on the list
   And I wait for 5 seconds
   And I click members-open-first
   And I wait for 1 seconds
