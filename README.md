@@ -16,7 +16,7 @@
 ## Escenarios de Pruebas:
 ### Posts:
 * Crear un post correctamente
-* Crear un post cond atos vacíos
+* Crear un post con datos vacíos
 * Eliminar un post publicado
 * Eliminar un post no publicado
 * Visualizar el previo de un post
