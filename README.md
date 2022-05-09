@@ -39,6 +39,11 @@
 * Actualziar un tag de manera incorrecta - sin nombre.
 * Eliminar un tag existente.
 
+## Nota
+Para facilitar las pruebas se agregó la plataforma Ghost a la siguiente URL http://estudiantesmiso.space:2368, dónde las credenciales de administración son las siguientes: 
+- email : grupo10@uniandes.edu.co
+- password : mMCDL6mWRAWyKUC
+
 ## Pruebas con Cypress:
 ### Instrucciones para ejecutar los escenarios de manera local:
 #### Requisitos (Linux/MacOS)
