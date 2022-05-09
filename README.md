@@ -60,7 +60,7 @@ Para facilitar las pruebas se agregó la plataforma Ghost a la siguiente URL htt
 - NodeJS v16.14.2
 - Libreria de kraken instalada en modo global (npm install -g kraken-node)
 - make
-- En el caso de MacOS, se debe tener instalado ADB. Usando homebrew se instala de la siguiente manera: brew install android-platform-tools
+- En el caso de MacOS, se debe tener instalado ADB. Usando homebrew se instala de la siguiente manera: `brew install android-platform-tools`
 
 #### Ejecucion
 `make run-kraken-test`
@@ -70,7 +70,7 @@ Disponemos de una maquina virtual con el ambiente preparado, listo para ser ejec
 Para realizar las pruebas usando este mecanismo, debe de disponer de VirtualBox version 6.2 o superior.
 
 #### Ejecucion
-- Debe descargar la imagen de este link: ...
+- Debe descargar la imagen de este link: https://drive.google.com/drive/folders/1qKqhrBaWdAnxFAEi4ZdHdyqNvGdHIw2g?usp=sharing
 - Importar la maquina virtual.
 - Configurar la maquina virtual ajustandola a sus necesidades ( asignar numero de CPUs y memoria RAM )
 - Ejercutar la maquina virtual.
