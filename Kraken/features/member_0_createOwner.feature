@@ -15,6 +15,8 @@ Scenario: [0 — Member] — Como usuario administrador ingreso sesión y creo u
   And I click owner-new-member
   And I wait for 1 seconds
   Given I navigate to page "<test_page_members>"
+  And I wait for 1 seconds
+  And I check the user "<test_login_email>" appears on the list
   And I wait for 5 seconds
   And I click members-open-first
   And I wait for 1 seconds
