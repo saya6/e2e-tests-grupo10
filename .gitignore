@@ -1,2 +1,13 @@
-Kraken/reports/
-Kraken/node_modules/
+.vscode/*.log
+
+Test-ghost-v4.0.0/Kraken/reports/
+Test-ghost-v4.0.0/Kraken/node_modules/
+Test-ghost-v4.0.0/Cypress/cypress/videos
+
+Test-ghost-v4.45.0/Kraken/reports/
+Test-ghost-v4.45.0/Kraken/node_modules/
+Test-ghost-v4.45.0/Cypress/cypress/videos
+
+Test-ghost-v4.45.0-min/Kraken/reports/
+Test-ghost-v4.45.0-min/Kraken/node_modules/
+Test-ghost-v4.45.0-min/Cypress/cypress/videos
