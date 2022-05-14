@@ -2,6 +2,7 @@
 
 describe('Testing user login + member creation options', () => {
     beforeEach(()=>{
+        cy.viewport(1920, 1080)
         cy.visit('http://estudiantesmiso.space:2368/ghost')
         cy.wait(7000)
     })
@@ -10,9 +11,9 @@ describe('Testing user login + member creation options', () => {
         cy.get('form').within(() => {
             cy.get('input[name="identification"]').type('grupo10@uniandes.edu.co')
             cy.get('input[name="password"]').type('mMCDL6mWRAWyKUC')
-            cy.screenshot('step1-2-login_info_complete')
-            cy.get("#ember11").click()
         })
+        cy.screenshot('step1-2-login_info_complete')
+        cy.get("#ember11").click()
         cy.wait(5000)
         cy.screenshot('step1-3-dashboard')
         cy.visit('http://estudiantesmiso.space:2368/ghost/#/members')
@@ -39,9 +40,9 @@ describe('Testing user login + member creation options', () => {
         cy.get('form').within(() => {
             cy.get('input[name="identification"]').type('grupo10@uniandes.edu.co')
             cy.get('input[name="password"]').type('mMCDL6mWRAWyKUC')
-            cy.screenshot('step2-2-login_info_complete')
-            cy.get("#ember11").click()
         })
+        cy.screenshot('step2-2-login_info_complete')
+        cy.get("#ember11").click()
         cy.wait(5000)
         cy.screenshot('step2-3-dashboard')
         cy.visit('http://estudiantesmiso.space:2368/ghost/#/members')
@@ -77,9 +78,9 @@ describe('Testing user login + member creation options', () => {
         cy.get('form').within(() => {
             cy.get('input[name="identification"]').type('grupo10@uniandes.edu.co')
             cy.get('input[name="password"]').type('mMCDL6mWRAWyKUC')
-            cy.screenshot('step3-2-login_info_complete')
-            cy.get("#ember11").click()
         })
+        cy.screenshot('step3-2-login_info_complete')
+        cy.get("#ember11").click()
         cy.wait(5000)
         cy.screenshot('step3-3-dashboard')
         cy.visit('http://estudiantesmiso.space:2368/ghost/#/members')
@@ -122,9 +123,9 @@ describe('Testing user login + member creation options', () => {
         cy.get('form').within(() => {
             cy.get('input[name="identification"]').type('grupo10@uniandes.edu.co')
             cy.get('input[name="password"]').type('mMCDL6mWRAWyKUC')
-            cy.screenshot('step4-2-login_info_complete')
-            cy.get("#ember11").click()
         })
+        cy.screenshot('step4-2-login_info_complete')
+        cy.get("#ember11").click()
         cy.wait(5000)
         cy.screenshot('step4-3-dashboard')
         cy.visit('http://estudiantesmiso.space:2368/ghost/#/members')
@@ -169,9 +170,9 @@ describe('Testing user login + member creation options', () => {
         cy.get('form').within(() => {
             cy.get('input[name="identification"]').type('grupo10@uniandes.edu.co')
             cy.get('input[name="password"]').type('mMCDL6mWRAWyKUC')
-            cy.screenshot('step5-2-login_info_complete')
-            cy.get("#ember11").click()
         })
+        cy.screenshot('step5-2-login_info_complete')
+        cy.get("#ember11").click()
         cy.wait(5000)
         cy.screenshot('step5-3-dashboard')
         // Create member for testing
