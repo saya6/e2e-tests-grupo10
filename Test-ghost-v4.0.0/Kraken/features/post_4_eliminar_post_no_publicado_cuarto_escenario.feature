@@ -1,4 +1,4 @@
-Feature: Ghost posts
+Feature: eliminar_post_no_publicado
 
 @user1 @web
 Scenario: Eliminar post no publicado

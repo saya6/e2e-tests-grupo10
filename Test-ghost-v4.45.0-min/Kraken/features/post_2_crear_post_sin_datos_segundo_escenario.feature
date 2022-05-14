@@ -1,4 +1,4 @@
-Feature: Ghost posts
+Feature: crear_post_sin_datos
 
 @user1 @web
 Scenario: Crear post sin datos
