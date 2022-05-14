@@ -1,6 +1,6 @@
 setup:
-	cd Kraken && npm install
-
+	cd Test-ghost-v4.45.0/Kraken && npm install
+	
 run-kraken-test: 
 	cd Test-ghost-v4.45.0/Kraken && node_modules/kraken-node/bin/kraken-node run
 
