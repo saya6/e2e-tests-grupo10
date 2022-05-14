@@ -1,0 +1,24 @@
+{
+    "ghost1": "Test-ghost-v4.0.0",
+    "ghost2": "Test-ghost-v4.45.0",
+    "tests": [
+        {"tool": "Kraken", "feature": "members-edit", "stage":"successful"},
+        {"tool": "Kraken", "feature": "members-edit", "stage":"succesful2"},
+        {"tool": "Cypress", "feature": "member_edit.spec.js", "stage":"successful"}
+    ],
+    "options":{
+        "output": {
+            "errorColor": {
+                "red": 255,
+                "green": 0,
+                "blue": 255
+            },
+            "errorType": "movement",
+            "largeImageThreshold": 0,
+            "useCrossOrigin": false,
+            "outputDiff": true
+        },
+        "scaleToSameSize": true,
+        "ignore": "antialiasing"
+    }
+}
