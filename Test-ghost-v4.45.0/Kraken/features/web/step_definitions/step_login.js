@@ -1,8 +1,17 @@
-const { Given, When, Then } = require('@cucumber/cucumber');
+const { Given, When, Then, Before } = require('@cucumber/cucumber');
 const expect = require('chai').expect;
+
+var i = 0;
+let name = ""
+
+Before((scenario)=>{
+    name = scenario.gherkinDocument.feature.name.replace(/ /g, "_");
+    i = 1;
+});
 
 // Login Steps.
 When('I enter email {kraken-string}', async function (email) {
+    await this.driver.saveScreenshot("images/"+name+"/"+ i++ +".png");
     let element = await this.driver.$('#ember7');
     return await element.setValue(email);
 });
