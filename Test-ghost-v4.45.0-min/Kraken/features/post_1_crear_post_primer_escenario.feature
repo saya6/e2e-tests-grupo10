@@ -1,4 +1,4 @@
-Feature: Ghost posts
+Feature: crear_post_con_exito
 
 @user1 @web
 Scenario: Crear post

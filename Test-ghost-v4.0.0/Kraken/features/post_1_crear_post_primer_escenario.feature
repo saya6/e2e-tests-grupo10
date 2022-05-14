@@ -1,4 +1,4 @@
-Feature: Ghost posts
+Feature: crear_post_con_exito
 
 @user1 @web
 Scenario: Crear post
@@ -21,8 +21,6 @@ Scenario: Crear post
   And I click publish
   And I wait for 2 seconds
   And I click publish button
-  And I wait for 3 seconds
-  And I click confirmation publish button
   And I wait for 3 seconds
   And I go back to list posts
   And I wait for 3 seconds

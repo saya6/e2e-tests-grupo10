@@ -1,4 +1,4 @@
-Feature: Ghost posts
+Feature: crear_post_sin_datos
 
 @user1 @web
 Scenario: Crear post sin datos
@@ -20,13 +20,9 @@ Scenario: Crear post sin datos
   And I wait for 4 seconds
   And I clean post title 
   And I wait for 4 seconds
-  And I click configuration button
-  And I wait for 4 seconds
   And I click publish
   And I wait for 2 seconds
   And I click publish button
-  And I wait for 3 seconds
-  And I click confirmation publish button
   And I wait for 3 seconds
   And I go back to list posts
   And I wait for 3 seconds

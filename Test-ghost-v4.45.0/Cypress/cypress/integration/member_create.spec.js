@@ -175,6 +175,7 @@ describe('Testing user login + member creation options', () => {
         cy.get("#ember11").click()
         cy.wait(5000)
         cy.screenshot('step5-delete-member/step5-3-dashboard')
+
         // Create member for testing
         cy.visit('http://estudiantesmiso.space:2368/ghost/#/members/new') 
         cy.wait(1000)
