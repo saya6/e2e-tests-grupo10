@@ -11,3 +11,6 @@ Test-ghost-v4.45.0/Cypress/cypress/videos
 Test-ghost-v4.45.0-min/Kraken/reports/
 Test-ghost-v4.45.0-min/Kraken/node_modules/
 Test-ghost-v4.45.0-min/Cypress/cypress/videos
+
+Report/node_modules/
+Report/results
