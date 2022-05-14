@@ -10,7 +10,7 @@ Before((scenario)=>{
 });
 When('I click post option', async function() {
     await this.driver.saveScreenshot("images/"+name+"/"+ i++ +".png");
-    let element = await this.driver.$('#ember26');
+    let element = await this.driver.$('#ember30');
     return await element.click();
 })
 
@@ -33,7 +33,7 @@ When('I enter post body {kraken-string}', async function (text) {
 
 When('I click configuration button', async function() {
     await this.driver.saveScreenshot("images/"+name+"/"+ i++ +".png");
-    let element = await this.driver.$('button[class="settings-menu-toggle gh-btn gh-btn-editor gh-btn-icon icon-only gh-btn-action-icon"]');
+    let element = await this.driver.$('button[class="gh-btn gh-btn-editor gh-btn-icon only-has-icon gh-actions-cog ml3"]');
     return await element.click();
 })
 
@@ -51,13 +51,13 @@ When('I click publish button', async function() {
 
 When('I click confirmation publish button', async function() {
     await this.driver.saveScreenshot("images/"+name+"/"+ i++ +".png");
-    let element = await this.driver.$('button[class="gh-btn gh-btn-black gh-btn-icon ember-view"]');
+    let element = await this.driver.$('button[class="gh-btn gh-btn-black gh-publishmenu-button gh-btn-icon ember-view"]');
     return await element.click();
 })
 
 When('I go back to list posts', async function() {
     await this.driver.saveScreenshot("images/"+name+"/"+ i++ +".png");
-    let element = await this.driver.$('a[class="ember-view gh-editor-back-button"]');
+    let element = await this.driver.$('a[class="gh-editor-back-button ember-view"]');
     return await element.click();
 })
 

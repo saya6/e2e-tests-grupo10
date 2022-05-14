@@ -22,8 +22,6 @@ Scenario: Crear post
   And I wait for 2 seconds
   And I click publish button
   And I wait for 3 seconds
-  And I click confirmation publish button
-  And I wait for 3 seconds
   And I go back to list posts
   And I wait for 3 seconds
   Then I go to see my post in list "$$name_1"

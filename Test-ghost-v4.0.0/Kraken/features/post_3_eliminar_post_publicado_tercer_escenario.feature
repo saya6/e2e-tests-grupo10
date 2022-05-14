@@ -22,8 +22,6 @@ Scenario: Eliminar post publicado
   And I wait for 2 seconds
   And I click publish button
   And I wait for 3 seconds
-  And I click confirmation publish button
-  And I wait for 3 seconds
   And I delete my post
   And I wait for 3 seconds
   And I confirm to delete my post
