@@ -66,7 +66,7 @@ URL version `4.0.0` : http://estudiantesmiso.space:2369/ghost/#
 ### Instrucciones para ejecutar los escenarios de manera local:
 #### Requisitos (Linux/MacOS)
 - NodeJS v16.14.2
-- Libreria de cypress instalada en modo global (npm install -g cypress)
+- Librería de cypress instalada en modo global (npm install -g cypress)
 - make
 #### Ejecucion
 `make run-all-cypress-test`
@@ -76,7 +76,7 @@ URL version `4.0.0` : http://estudiantesmiso.space:2369/ghost/#
 ### Instrucciones para ejecutar los escenarios de manera local:
 #### Requisitos (Linux/MacOS)
 - NodeJS v16.14.2
-- Libreria de kraken instalada en modo global (npm install -g kraken-node)
+- Librería de kraken instalada en modo global (npm install -g kraken-node)
 - make
 - En el caso de MacOS, se debe tener instalado ADB. Usando homebrew se instala de la siguiente manera: `brew install android-platform-tools`
 
@@ -86,22 +86,22 @@ URL version `4.0.0` : http://estudiantesmiso.space:2369/ghost/#
 ## Ejecucion pruebas de regresion visual
 -   `make run-visual-regression`
 ## Pruebas usando VirtualBox:
-Disponemos de una maquina virtual con el ambiente preparado, listo para ser ejecutado.
+Disponemos de una máquina virtual con el ambiente preparado, listo para ser ejecutado.
 Para realizar las pruebas usando este mecanismo, debe de disponer de VirtualBox version 6.2 o superior.
 
-#### Ejecucion
+#### Ejecución
 - Debe descargar la imagen de este link: https://drive.google.com/drive/folders/1qKqhrBaWdAnxFAEi4ZdHdyqNvGdHIw2g?usp=sharing
-- Importar la maquina virtual.
-- Configurar la maquina virtual ajustandola a sus necesidades ( asignar numero de CPUs y memoria RAM )
-- Ejercutar la maquina virtual.
-- Iniciar sesion con el usuario `tae` y password `tae2022`.
+- Importar la máquina virtual.
+- Configurar la máquina virtual ajustandola a sus necesidades ( asignar numero de CPUs y memoria RAM )
+- Ejercutar la máquina virtual.
+- Iniciar sesión con el usuario `tae` y password `tae2022`.
 - Abrir una terminal.
 - `cd e2e-tests-grupo10`.
 - Dependiendo de las pruebas que desee ejecutar debe ejecutar `make run-all-kraken-test` para ejecutar las pruebas usando `kraken` o `make run-all-cypress-test` para ejecutar las pruebas usando `cypress`.
 - Enjoy it!
 
-## Ejecucion en un ambiente en especifico
-Debe tener en cuenta que los comandos `run-all-kraken-test` y `run-all-cypress-test` ejecutaran las pruebas para cada una de las versiones de Ghost, si desea hacer una ejecucion mas precisa sobre una version en especial, puede ejecutar:
+## Ejecución en un ambiente en específico
+Debe tener en cuenta que los comandos `run-all-kraken-test` y `run-all-cypress-test` ejecutarán las pruebas para cada una de las versiones de Ghost, si desea hacer una ejecución mas precisa sobre una version en especial, puede ejecutar:
 ### Kraken
 - `make run-kraken-test-4-45-0`
 - `make run-kraken-test-4-0-0`
