@@ -53,7 +53,7 @@ describe('Testing user login + member creation options', () => {
         cy.screenshot('step2-add-new-member/step2-5-new-member-page')
         cy.get('#member-name').type('Andres Ramirez', { force: true })
         cy.get('#member-email').type('aramirezr2@uniandes.edu.co', { force: true })
-        cy.wait(1000)
+        cy.wait(1000) 
         cy.screenshot('step2-add-new-member/step2-6-new-member-page-complete')
         cy.get('button[class="gh-btn gh-btn-primary gh-btn-icon ember-view"]').click();
         cy.wait(2000)
