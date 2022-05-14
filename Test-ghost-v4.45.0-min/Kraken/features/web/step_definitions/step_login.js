@@ -11,7 +11,8 @@ Before((scenario)=>{
 
 // Login Steps.
 When('I enter email {kraken-string}', async function (email) {
-    await this.driver.saveScreenshot("images/"+name+"/"+ i++ +".png");
+    await this.driver.saveScreenshot("images/post/"+name+"/"+ i++ +".png");
+
     let element = await this.driver.$('#ember7');
     return await element.setValue(email);
 });
