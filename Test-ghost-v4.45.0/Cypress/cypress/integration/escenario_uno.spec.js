@@ -1,11 +1,11 @@
 /// <reference types="cypress" />
 
 var i = 0;
-let image_file_test_1 = 'images/crear_post_con_exito/';
-let image_file_test_2 = 'images/crear_post_sin_datos/';
-let image_file_test_3 = 'images/eliminar_post_publicado/';
-let image_file_test_4 = 'images/eliminar_post_no_publicado/';
-let image_file_test_5 = 'images/ver_previo_de_post/';
+let image_file_test_1 = 'crear_post_con_exito/';
+let image_file_test_2 = 'crear_post_sin_datos/';
+let image_file_test_3 = 'eliminar_post_publicado/';
+let image_file_test_4 = 'eliminar_post_no_publicado/';
+let image_file_test_5 = 'ver_previo_de_post/';
 
 describe('Escenarios', () => {
   beforeEach(() => {
