@@ -39,10 +39,28 @@
 * Actualziar un tag de manera incorrecta - sin nombre.
 * Eliminar un tag existente.
 
+## Funcionalidades con pruebas de regresion visual (Semana 6)
+### Funcionalidades:
+* Iniciar sesión.
+* Crear posts.
+* Eliminar posts.
+* Visualizar el previo de un post.
+### Escenarios de Pruebas:
+#### Posts:
+* Crear un post correctamente
+* Crear un post con datos vacíos
+* Eliminar un post publicado
+* Eliminar un post no publicado
+* Visualizar el previo de un post
+
 ## Nota
-Para facilitar las pruebas se agregó la plataforma Ghost a la siguiente URL http://estudiantesmiso.space:2368, dónde las credenciales de administración son las siguientes: 
+Para facilitar las pruebas se desplegó en un servidor propio la plataforma Ghost en sus versiones `4.0.0` y `4.45.0`. Dónde las credenciales de administración son las siguientes para ambas versiones: 
 - email : grupo10@uniandes.edu.co
 - password : mMCDL6mWRAWyKUC
+
+URL version `4.45.0`: http://estudiantesmiso.space:2368/ghost/#
+
+URL version `4.0.0` : http://estudiantesmiso.space:2369/ghost/#
 
 ## Pruebas con Cypress:
 ### Instrucciones para ejecutar los escenarios de manera local:
@@ -51,7 +69,7 @@ Para facilitar las pruebas se agregó la plataforma Ghost a la siguiente URL htt
 - Libreria de cypress instalada en modo global (npm install -g cypress)
 - make
 #### Ejecucion
-`make run-cypress-test`
+`make run-all-cypress-test`
 
 
 ## Pruebas con Kraken:
@@ -63,8 +81,10 @@ Para facilitar las pruebas se agregó la plataforma Ghost a la siguiente URL htt
 - En el caso de MacOS, se debe tener instalado ADB. Usando homebrew se instala de la siguiente manera: `brew install android-platform-tools`
 
 #### Ejecucion
-`make run-kraken-test`
+`make run-all-kraken-test`
 
+## Ejecucion pruebas de regresion visual
+-   `make run-visual-regression`
 ## Pruebas usando VirtualBox:
 Disponemos de una maquina virtual con el ambiente preparado, listo para ser ejecutado.
 Para realizar las pruebas usando este mecanismo, debe de disponer de VirtualBox version 6.2 o superior.
@@ -77,8 +97,18 @@ Para realizar las pruebas usando este mecanismo, debe de disponer de VirtualBox 
 - Iniciar sesion con el usuario `tae` y password `tae2022`.
 - Abrir una terminal.
 - `cd e2e-tests-grupo10`.
-- Dependiendo de las pruebas que desee ejecutar debe ejecutar `make run-cypress-test` para ejecutar las pruebas usando `kraken` o `make run-cypress-test` para ejecutar las pruebas usando `cypress`.
+- Dependiendo de las pruebas que desee ejecutar debe ejecutar `make run-all-kraken-test` para ejecutar las pruebas usando `kraken` o `make run-all-cypress-test` para ejecutar las pruebas usando `cypress`.
 - Enjoy it!
+
+## Ejecucion en un ambiente en especifico
+Debe tener en cuenta que los comandos `run-all-kraken-test` y `run-all-cypress-test` ejecutaran las pruebas para cada una de las versiones de Ghost, si desea hacer una ejecucion mas precisa sobre una version en especial, puede ejecutar:
+### Kraken
+- `make run-kraken-test-4-45-0`
+- `make run-kraken-test-4-0-0`
+
+### Cypress
+-   `make run-cypress-test-4-45-0`
+-   `make run-cypress-test-4-0-0`
 
 
 

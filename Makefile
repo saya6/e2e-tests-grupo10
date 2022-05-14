@@ -29,7 +29,7 @@ run-cypress-test-4-0-0:
 
 # ALL TESTS TARGETS
 run-visual-regression:
-	echo "Work in progress..."
+	cd Report && npm install && node index.js && open ./results/index.html
 
 run-all-cypress-test: run-cypress-test-4-45-0 run-cypress-test-4-0-0
 
