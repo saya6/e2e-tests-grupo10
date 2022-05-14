@@ -50,7 +50,7 @@ When('I check the user {kraken-string} appears on the list', async function(user
     let element = await this.driver.$("/html/body/div[2]/div/main/section/section/div/table/tbody/tr/a/div/div/p").getText();
     expect(element).to.equal(userEmail)
 });
-// Screenwhot
-When('I take a screenshot {kraken-string}', async function(imageName) {
-    await this.driver.saveScreenshot('images/members-create/'+ imageName +'.png');
+// Screenshot 
+When('I take a screenshot for members create module on folder {kraken-string} with name {kraken-string}', async function(folderName, imageName) {
+    await this.driver.saveScreenshot('images/members-create/'+ folderName  +'/'+ imageName +'.png');
 });
