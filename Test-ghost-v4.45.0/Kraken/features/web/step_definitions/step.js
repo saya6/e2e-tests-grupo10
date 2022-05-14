@@ -1,16 +1,6 @@
 const { Given, When, Then } = require('@cucumber/cucumber');
 var {expect} = require('chai');
 
-// When('I enter email {string}', async function (email) {
-//     let element = await this.driver.$('#ember7');
-//     return await element.setValue(email);
-// });
-
-// When('I enter password {string}', async function (password) {
-//     let element = await this.driver.$('#ember9');
-//     return await element.setValue(password);
-// });
-
 When('I click next', async function() {
     let element = await this.driver.$('#ember11');
     return await element.click();
@@ -71,3 +61,6 @@ When('I check the error message {string} is displayed', async function(errMsg) {
     expect(element).to.include(errMsg);
 });
 
+When('I take a screenshot for tags module with name {kraken-string} on folder {kraken-string}', async function(imageName, folderName) {
+    await this.driver.saveScreenshot('images/tags/'+ folderName  +'/'+ imageName +'.png');
+});
