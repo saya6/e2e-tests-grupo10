@@ -1,4 +1,4 @@
-Feature: Ghost posts
+Feature: ver_previo_de_post
 
 @user1 @web
 Scenario: Ver preview de post
