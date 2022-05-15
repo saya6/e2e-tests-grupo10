@@ -6,6 +6,8 @@ const { options, tests, ghost1, ghost2 } = config;
 
 async function executeTest(){
     
+    console.log("Generando reporte")
+
     let resultInfo = {}
     let datetime = new Date().toISOString().replace(/:/g,".");
    
@@ -65,19 +67,20 @@ async function executeTest(){
     fs.copyFileSync('./bootstrap.min.css', `./results/bootstrap.min.css`);
     fs.copyFileSync('./bootstrap.bundle.min.js', `./results/bootstrap.bundle.min.js`);
 
-    return "DONE";  
+    return "Reporte generado";  
   }
 
   (async ()=>console.log(await executeTest()))();
 
 function stepReport(tool, feature, stage, step, info){
+    feature_min = feature.split(".")[0]
     return `<div class="accordion-item">
     <div class="accordion-header" id="flush-headingOne">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#${step.slice(0, -4)}" aria-expanded="false" aria-controls="${step.slice(0, -4)}">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#${tool}-${feature_min}-${stage}-${step.slice(0, -4)}" aria-expanded="false" aria-controls="${step.slice(0, -4)}">
             Step: ${step.slice(0, -4)}<br>Raw difference: ${info['misMatchPercentage']}%
         </button>
     </div>
-    <div id="${step.slice(0, -4)}" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample"> 
+    <div id="${tool}-${feature_min}-${stage}-${step.slice(0, -4)}" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#${tool}-${feature}-${stage}"> 
         <div class="row mb-2">
             <div class="col">
                 <span class="row">
@@ -123,7 +126,7 @@ function createReport(datetime, tests, resInfo){
 
         ans += `<div class="container my-4">
                     <h3>${tool} - ${[feature]} - ${stage}</h3>
-                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion accordion-flush" id="${tool}-${feature}-${stage}">
                         ${resInfo[tool][feature][stage]['steps'].map(step=>stepReport(tool, feature, stage, step, resInfo[tool][feature][stage][step])).join('\n')}
                     </div>
                 </div>`
