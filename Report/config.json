@@ -1,0 +1,31 @@
+{
+    "ghost1": "Test-ghost-v4.0.0",
+    "ghost2": "Test-ghost-v4.45.0-min",
+    "tests": [
+        {"tool": "Kraken", "feature": "post", "stage":"crear_post_con_exito"},
+        {"tool": "Kraken", "feature": "post", "stage":"crear_post_sin_datos"},
+        {"tool": "Kraken", "feature": "post", "stage":"eliminar_post_no_publicado"},
+        {"tool": "Kraken", "feature": "post", "stage":"eliminar_post_publicado"},
+        {"tool": "Kraken", "feature": "post", "stage":"ver_previo_de_post"},
+        {"tool": "Cypress", "feature": "escenario_uno.spec.js", "stage":"crear_post_con_exito"},
+        {"tool": "Cypress", "feature": "escenario_uno.spec.js", "stage":"crear_post_sin_datos"},
+        {"tool": "Cypress", "feature": "escenario_uno.spec.js", "stage":"eliminar_post_no_publicado"},
+        {"tool": "Cypress", "feature": "escenario_uno.spec.js", "stage":"eliminar_post_publicado"},
+        {"tool": "Cypress", "feature": "escenario_uno.spec.js", "stage":"ver_previo_de_post"}
+    ],
+    "options":{
+        "output": {
+            "errorColor": {
+                "red": 255,
+                "green": 0,
+                "blue": 255
+            },
+            "errorType": "movement",
+            "largeImageThreshold": 0,
+            "useCrossOrigin": false,
+            "outputDiff": true
+        },
+        "scaleToSameSize": true,
+        "ignore": "antialiasing"
+    }
+}
