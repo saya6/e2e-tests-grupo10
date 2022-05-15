@@ -73,3 +73,7 @@ When('I check the error message {kraken-string}', async function(error_msg) {
     let elements = await this.driver.$$('article*=' + error_msg)
     expect(elements.length).to.equal(1)
 });
+
+When('I save screenshot {kraken-string} on {kraken-string}', async function(imageName, folderName) {
+    await this.driver.saveScreenshot('images/'+ folderName + "/" + imageName +'.png');
+});

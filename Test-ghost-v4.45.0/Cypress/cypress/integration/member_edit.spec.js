@@ -1,5 +1,8 @@
 /// <reference types="cypress" />
 
+var ss = 0
+var test = ''
+
 describe('Testing member editing options', () => {
     
     beforeEach(() => {
@@ -8,6 +11,9 @@ describe('Testing member editing options', () => {
     it('Editar miembro satisfactoriamente', () => {
       
         cy.fixture('configuration').then((configuration)  => {
+            test='success'
+            ss=1
+
             cy.visit(configuration.URL_GHOST_ADMIN)
             cy.wait(5000)
     
@@ -36,6 +42,9 @@ describe('Testing member editing options', () => {
     it('Editar el correo de un miembro, correo vacio', () => {
         
         cy.fixture('configuration').then((configuration)  => {
+            test = 'empty-email'
+            ss = 1
+            
             cy.visit(configuration.URL_GHOST_ADMIN)
             cy.wait(5000)
             
@@ -64,6 +73,9 @@ describe('Testing member editing options', () => {
     it('Editar el correo de un miembro, correo incorrecto', () => {
         
         cy.fixture('configuration').then((configuration)  => {
+            test = 'invalid-email'
+            ss = 1
+            
             cy.visit(configuration.URL_GHOST_ADMIN)
             cy.wait(5000)
             
@@ -92,6 +104,9 @@ describe('Testing member editing options', () => {
     it('Editar el correo de un miembro, correo ya existe', () => {
         
         cy.fixture('configuration').then((configuration)  => {
+            test = 'duplicated-email'
+            ss = 1
+            
             cy.visit(configuration.URL_GHOST_ADMIN)
             cy.wait(5000)
             
@@ -129,6 +144,9 @@ describe('Testing member editing options', () => {
     it('Editar la nota de un miembro, nota muy extensa', () => {
         
         cy.fixture('configuration').then((configuration)  => {
+            test = 'long-note'
+            ss = 1
+                        
             cy.visit(configuration.URL_GHOST_ADMIN)
             cy.wait(5000)
             
@@ -158,24 +176,31 @@ describe('Testing member editing options', () => {
 })
 
 function doLogin(cy, email, password ){
+    cy.screenshot(test + "/" + ss++ +'-login_page')
     cy.get('input[name="identification"]').type(email)
     cy.get('input[name="password"]').type(password)
     cy.get('button:contains("Sign in")').click()
     cy.wait(4000)
+    cy.screenshot(test + "/" + ss++ +'-dashboard')
 }
 
 function createMember(cy, name, email, note) {
     clickOn(cy, 'a', 'Members')
+    cy.screenshot(test + "/" + ss++ +'-members_list')
     clickOn(cy, 'a', 'New member')
+    cy.screenshot(test + "/" + ss++ +'-new_member')
     fillField(cy, 'input', 'name', name)
     fillField(cy, 'input', 'email', email)
     fillField(cy, 'textArea', 'note', note)
     clickOn(cy, 'button', 'Save')
+    cy.screenshot(test + "/" + ss++ +'-member_saved')
     cy.wait(2000)
 }
 
 function updateMember(cy, email, newData) {
+    cy.screenshot(test + "/" + ss++ +'-members_list')
     goToMember(cy, email)
+    cy.screenshot(test + "/" + ss++ +'-member_detail')
     if ('name' in newData){
         fillField(cy, 'input', 'name', newData.name)
     }
@@ -186,14 +211,20 @@ function updateMember(cy, email, newData) {
         fillField(cy, 'textArea', 'note', newData.note)
     }
     clickOn(cy, 'button', 'Save')
+    cy.screenshot(test + "/" + ss++ +'-member_saved')
     cy.wait(2000)
 }
 
 function deleteMember(cy, email) {
+    cy.screenshot(test + "/" + ss++ +'-members_list')
     goToMember(cy, email)
+    cy.screenshot(test + "/" + ss++ +'-member_detail')
     clickOn(cy, 'button', 'Actions')
+    cy.screenshot(test + "/" + ss++ +'-member_actions')
     clickOn(cy, 'button', 'Delete member')
+    cy.screenshot(test + "/" + ss++ +'-member_delete_confirmation')
     clickOnInModal(cy, 'button', 'Delete member')
+    cy.screenshot(test + "/" + ss++ +'-members_list')
 }
 
 function goToMember(cy, email) {
@@ -216,21 +247,25 @@ function checkIfMemberNotExists(cy, email) {
 }
 
 function checkIfEmptyMailError(cy) {
+    cy.screenshot(test + "/" + ss++ +'-member_save_error')
     checkErrorInField(cy, 'input', 'email', 'Please enter an email.')
     cy.wait(1000)
 }
 
 function checkIfWrongMailError(cy) {
+    cy.screenshot(test + "/" + ss++ +'-member_save_error')
     checkErrorInField(cy, 'input', 'email', 'Invalid Email.')
     cy.wait(1000)
 }
 
 function checkIfLongNoteError(cy) {
+    cy.screenshot(test + "/" + ss++ +'-member_save_error')
     checkErrorInField(cy, 'textArea', 'note', 'Note is too long.')
     cy.wait(1000)
 }
 
 function checkIfEmailRepetedError(cy) {
+    cy.screenshot(test + "/" + ss++ +'-member_save_error')
     checkGeneralError(cy, 'Validation error, cannot edit member. Member already exists. Attempting to edit member with existing email address')
     cy.wait(1000)
 }
@@ -245,6 +280,7 @@ function checkGeneralError(cy, errorMsg) {
 
 function cancelEdit(cy){
     clickOn(cy, 'a', 'Members')
+    cy.screenshot(test + "/" + ss++ +'-member_edit_cancel')
     clickOnInModal(cy, 'button', 'Leave')
     cy.wait(4000)
 }
