@@ -55,6 +55,9 @@
 ### Ventajas y desventajas:
 consultar la [wiki](https://github.com/saya6/e2e-tests-grupo10/wiki)
 
+### Reporte consolidado
+consultar: [reporte](https://github.com/saya6/e2e-tests-grupo10/blob/master/Report/results/report.html)
+
 ## Nota
 Para facilitar las pruebas se desplegó en un servidor propio la plataforma Ghost en sus versiones `4.0.0` y `4.45.0`. Dónde las credenciales de administración son las siguientes para ambas versiones: 
 - email : grupo10@uniandes.edu.co
