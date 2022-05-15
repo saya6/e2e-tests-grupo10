@@ -53,10 +53,10 @@
 * Eliminar un post no publicado
 * Visualizar el previo de un post
 ### Ventajas y desventajas:
-consultar la [wiki](https://github.com/saya6/e2e-tests-grupo10/wiki)
+Consultar la [wiki](https://github.com/saya6/e2e-tests-grupo10/wiki)
 
 ### Reporte consolidado
-consultar: [reporte](https://github.com/saya6/e2e-tests-grupo10/blob/master/Report/results/report.html)
+Consultar: [reporte](http://estudiantesmiso.space:8080/report.html)
 
 ## Nota
 Para facilitar las pruebas se desplegó en un servidor propio la plataforma Ghost en sus versiones `4.0.0` y `4.45.0`. Dónde las credenciales de administración son las siguientes para ambas versiones: 
@@ -89,7 +89,9 @@ URL version `4.0.0` : http://estudiantesmiso.space:2369/ghost/#
 `make run-all-kraken-test`
 
 ## Ejecucion pruebas de regresion visual
--   `make run-visual-regression`
+`make run-visual-regression`
+
+Nota: el script para generar el reporte de regresion visual se encuentra en la carpeta `Report`
 ## Pruebas usando VirtualBox:
 Disponemos de una máquina virtual con el ambiente preparado, listo para ser ejecutado.
 Para realizar las pruebas usando este mecanismo, debe de disponer de VirtualBox version 6.2 o superior.
