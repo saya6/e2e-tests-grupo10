@@ -1,7 +1,7 @@
 var data = [];
 var i = 0;
 
-describe('Escenarios', () => {
+describe('Escenarios datos pseudoaleatorios', () => {
   before(() => {
 
     cy.request("GET", "https://my.api.mockaroo.com/test_pseudo_aleatorio.json?key=309d1a50", {
@@ -31,10 +31,10 @@ describe('Escenarios', () => {
       cy.wait(3000);
 
       publishPost(cy);
-      cy.wait(3000);
+      cy.wait(5000);
 
-      validatePost(cy,configuration.URL_GHOST + title, title );
-      cy.wait(10000);
+      validatePost(cy);
+      cy.wait(3000);
     })
    
   })
@@ -59,10 +59,10 @@ describe('Escenarios', () => {
       cy.wait(3000);
 
       publishPost(cy);
-      cy.wait(3000);
+      cy.wait(5000);
 
-      validatePost(cy,configuration.URL_GHOST + title, title );
-      cy.wait(10000);
+      validatePost(cy);
+      cy.wait(3000);
     })
    
   })
@@ -87,10 +87,10 @@ describe('Escenarios', () => {
       cy.wait(3000);
 
       publishPost(cy);
-      cy.wait(3000);
+      cy.wait(5000);
 
-      validatePost(cy,configuration.URL_GHOST + title, title );
-      cy.wait(10000);
+      validatePost(cy);
+      cy.wait(3000);
     })
    
   })
@@ -115,10 +115,10 @@ describe('Escenarios', () => {
       cy.wait(3000);
 
       publishPost(cy);
-      cy.wait(3000);
+      cy.wait(5000);
 
-      validatePost(cy,configuration.URL_GHOST + title, title );
-      cy.wait(10000);
+      validatePost(cy);
+      cy.wait(3000);
     })
    
   })
@@ -143,10 +143,10 @@ describe('Escenarios', () => {
       cy.wait(3000);
 
       publishPost(cy);
-      cy.wait(3000);
+      cy.wait(5000);
 
-      validatePost(cy,configuration.URL_GHOST + title, title );
-      cy.wait(10000);
+      validatePost(cy);
+      cy.wait(3000);
     })
    
   })
@@ -171,10 +171,10 @@ describe('Escenarios', () => {
       cy.wait(3000);
 
       publishPost(cy);
-      cy.wait(3000);
+      cy.wait(5000);
 
-      validatePost(cy,configuration.URL_GHOST + title, title );
-      cy.wait(10000);
+      validatePost(cy);
+      cy.wait(3000);
     })
    
   })
@@ -199,10 +199,10 @@ describe('Escenarios', () => {
       cy.wait(3000);
 
       publishPost(cy);
-      cy.wait(3000);
+      cy.wait(5000);
 
-      validatePost(cy,configuration.URL_GHOST + title, title );
-      cy.wait(10000);
+      validatePost(cy);
+      cy.wait(3000);
     })
    
   })
@@ -227,10 +227,10 @@ describe('Escenarios', () => {
       cy.wait(3000);
 
       publishPost(cy);
-      cy.wait(3000);
+      cy.wait(5000);
 
-      validatePost(cy,configuration.URL_GHOST + title, title );
-      cy.wait(10000);
+      validatePost(cy);
+      cy.wait(3000);
     })
    
   })
@@ -255,10 +255,10 @@ describe('Escenarios', () => {
       cy.wait(3000);
 
       publishPost(cy);
-      cy.wait(3000);
+      cy.wait(5000);
 
-      validatePost(cy,configuration.URL_GHOST + title, title );
-      cy.wait(10000);
+      validatePost(cy);
+      cy.wait(3000);
     })
    
   })
@@ -283,10 +283,10 @@ describe('Escenarios', () => {
       cy.wait(3000);
 
       publishPost(cy);
-      cy.wait(3000);
+      cy.wait(5000);
 
-      validatePost(cy,configuration.URL_GHOST + title, title );
-      cy.wait(10000);
+      validatePost(cy);
+      cy.wait(3000);
     })
    
   })
@@ -312,10 +312,10 @@ describe('Escenarios', () => {
       cy.wait(3000);
 
       publishPost(cy);
-      cy.wait(3000);
+      cy.wait(5000);
 
-      validatePost(cy,configuration.URL_GHOST + title, title );
-      cy.wait(10000);
+      validatePost(cy);
+      cy.wait(3000);
     })
    
   })
@@ -340,10 +340,10 @@ describe('Escenarios', () => {
       cy.wait(3000);
 
       publishPost(cy);
-      cy.wait(3000);
+      cy.wait(5000);
 
-      validatePost(cy,configuration.URL_GHOST + title, title );
-      cy.wait(10000);
+      validatePost(cy);
+      cy.wait(3000);
     })
    
   })
@@ -368,10 +368,10 @@ describe('Escenarios', () => {
       cy.wait(3000);
 
       publishPost(cy);
-      cy.wait(3000);
+      cy.wait(5000);
 
-      validatePost(cy,configuration.URL_GHOST + title, title );
-      cy.wait(10000);
+      validatePost(cy);
+      cy.wait(3000);
     })
    
   })
@@ -396,10 +396,10 @@ describe('Escenarios', () => {
       cy.wait(3000);
 
       publishPost(cy);
-      cy.wait(3000);
+      cy.wait(5000);
 
-      validatePost(cy,configuration.URL_GHOST + title, title );
-      cy.wait(10000);
+      validatePost(cy);
+      cy.wait(3000);
     })
    
   })
@@ -424,10 +424,10 @@ describe('Escenarios', () => {
       cy.wait(3000);
 
       publishPost(cy);
-      cy.wait(3000);
+      cy.wait(5000);
 
-      validatePost(cy,configuration.URL_GHOST + title, title );
-      cy.wait(10000);
+      validatePost(cy);
+      cy.wait(3000);
     })
    
   })
@@ -452,10 +452,10 @@ describe('Escenarios', () => {
       cy.wait(3000);
 
       publishPost(cy);
-      cy.wait(3000);
+      cy.wait(5000);
 
-      validatePost(cy,configuration.URL_GHOST + title, title );
-      cy.wait(10000);
+      validatePost(cy);
+      cy.wait(3000);
     })
    
   })
@@ -480,10 +480,10 @@ describe('Escenarios', () => {
       cy.wait(3000);
 
       publishPost(cy);
-      cy.wait(3000);
+      cy.wait(5000);
 
-      validatePost(cy,configuration.URL_GHOST + title, title );
-      cy.wait(10000);
+      validatePost(cy);
+      cy.wait(3000);
     })
    
   })
@@ -508,10 +508,10 @@ describe('Escenarios', () => {
       cy.wait(3000);
 
       publishPost(cy);
-      cy.wait(3000);
+      cy.wait(5000);
 
-      validatePost(cy,configuration.URL_GHOST + title, title );
-      cy.wait(10000);
+      validatePost(cy);
+      cy.wait(3000);
     })
    
   })
@@ -536,10 +536,10 @@ describe('Escenarios', () => {
       cy.wait(3000);
 
       publishPost(cy);
-      cy.wait(3000);
+      cy.wait(5000);
 
-      validatePost(cy,configuration.URL_GHOST + title, title );
-      cy.wait(10000);
+      validatePost(cy);
+      cy.wait(3000);
     })
    
   })
@@ -564,10 +564,10 @@ describe('Escenarios', () => {
       cy.wait(3000);
 
       publishPost(cy);
-      cy.wait(3000);
+      cy.wait(5000);
 
-      validatePost(cy,configuration.URL_GHOST + title, title );
-      cy.wait(10000);
+      validatePost(cy);
+      cy.wait(3000);
     })
    
   })
@@ -593,10 +593,10 @@ describe('Escenarios', () => {
       cy.wait(3000);
 
       publishPost(cy);
-      cy.wait(3000);
+      cy.wait(5000);
 
-      validatePost(cy,configuration.URL_GHOST + title, title );
-      cy.wait(10000);
+      validatePost(cy);
+      cy.wait(3000);
     })
    
   })
@@ -621,10 +621,10 @@ describe('Escenarios', () => {
       cy.wait(3000);
 
       publishPost(cy);
-      cy.wait(3000);
+      cy.wait(5000);
 
-      validatePost(cy,configuration.URL_GHOST + title, title );
-      cy.wait(10000);
+      validatePost(cy);
+      cy.wait(3000);
     })
    
   })
@@ -649,10 +649,10 @@ describe('Escenarios', () => {
       cy.wait(3000);
 
       publishPost(cy);
-      cy.wait(3000);
+      cy.wait(5000);
 
-      validatePost(cy,configuration.URL_GHOST + title, title );
-      cy.wait(10000);
+      validatePost(cy);
+      cy.wait(3000);
     })
    
   })
@@ -677,10 +677,10 @@ describe('Escenarios', () => {
       cy.wait(3000);
 
       publishPost(cy);
-      cy.wait(3000);
+      cy.wait(5000);
 
-      validatePost(cy,configuration.URL_GHOST + title, title );
-      cy.wait(10000);
+      validatePost(cy);
+      cy.wait(3000);
     })
    
   })
@@ -705,10 +705,10 @@ describe('Escenarios', () => {
       cy.wait(3000);
 
       publishPost(cy);
-      cy.wait(3000);
+      cy.wait(5000);
 
-      validatePost(cy,configuration.URL_GHOST + title, title );
-      cy.wait(10000);
+      validatePost(cy);
+      cy.wait(3000);
     })
    
   })
@@ -733,10 +733,10 @@ describe('Escenarios', () => {
       cy.wait(3000);
 
       publishPost(cy);
-      cy.wait(3000);
+      cy.wait(5000);
 
-      validatePost(cy,configuration.URL_GHOST + title, title );
-      cy.wait(10000);
+      validatePost(cy);
+      cy.wait(3000);
     })
    
   })
@@ -761,10 +761,10 @@ describe('Escenarios', () => {
       cy.wait(3000);
 
       publishPost(cy);
-      cy.wait(3000);
+      cy.wait(5000);
 
-      validatePost(cy,configuration.URL_GHOST + title, title );
-      cy.wait(10000);
+      validatePost(cy);
+      cy.wait(3000);
     })
    
   })
@@ -789,10 +789,10 @@ describe('Escenarios', () => {
       cy.wait(3000);
 
       publishPost(cy);
-      cy.wait(3000);
+      cy.wait(5000);
 
-      validatePost(cy,configuration.URL_GHOST + title, title );
-      cy.wait(10000);
+      validatePost(cy);
+      cy.wait(3000);
     })
    
   })
@@ -817,10 +817,10 @@ describe('Escenarios', () => {
       cy.wait(3000);
 
       publishPost(cy);
-      cy.wait(3000);
+      cy.wait(5000);
 
-      validatePost(cy,configuration.URL_GHOST + title, title );
-      cy.wait(10000);
+      validatePost(cy);
+      cy.wait(3000);
     })
    
   })
@@ -845,10 +845,10 @@ describe('Escenarios', () => {
       cy.wait(3000);
 
       publishPost(cy);
-      cy.wait(3000);
+      cy.wait(5000);
 
-      validatePost(cy,configuration.URL_GHOST + title, title );
-      cy.wait(10000);
+      validatePost(cy);
+      cy.wait(3000);
     })
    
   })
@@ -874,10 +874,10 @@ describe('Escenarios', () => {
       cy.wait(3000);
 
       publishPost(cy);
-      cy.wait(3000);
+      cy.wait(5000);
 
-      validatePost(cy,configuration.URL_GHOST + title, title );
-      cy.wait(10000);
+      validatePost(cy);
+      cy.wait(3000);
     })
    
   })
@@ -902,10 +902,10 @@ describe('Escenarios', () => {
       cy.wait(3000);
 
       publishPost(cy);
-      cy.wait(3000);
+      cy.wait(5000);
 
-      validatePost(cy,configuration.URL_GHOST + title, title );
-      cy.wait(10000);
+      validatePost(cy);
+      cy.wait(3000);
     })
    
   })
@@ -930,10 +930,10 @@ describe('Escenarios', () => {
       cy.wait(3000);
 
       publishPost(cy);
-      cy.wait(3000);
+      cy.wait(5000);
 
-      validatePost(cy,configuration.URL_GHOST + title, title );
-      cy.wait(10000);
+      validatePost(cy);
+      cy.wait(3000);
     })
    
   })
@@ -958,10 +958,10 @@ describe('Escenarios', () => {
       cy.wait(3000);
 
       publishPost(cy);
-      cy.wait(3000);
+      cy.wait(5000);
 
-      validatePost(cy,configuration.URL_GHOST + title, title );
-      cy.wait(10000);
+      validatePost(cy);
+      cy.wait(3000);
     })
    
   })
@@ -986,10 +986,10 @@ describe('Escenarios', () => {
       cy.wait(3000);
 
       publishPost(cy);
-      cy.wait(3000);
+      cy.wait(5000);
 
-      validatePost(cy,configuration.URL_GHOST + title, title );
-      cy.wait(10000);
+      validatePost(cy);
+      cy.wait(3000);
     })
    
   })
@@ -1014,10 +1014,10 @@ describe('Escenarios', () => {
       cy.wait(3000);
 
       publishPost(cy);
-      cy.wait(3000);
+      cy.wait(5000);
 
-      validatePost(cy,configuration.URL_GHOST + title, title );
-      cy.wait(10000);
+      validatePost(cy);
+      cy.wait(3000);
     })
    
   })
@@ -1042,10 +1042,10 @@ describe('Escenarios', () => {
       cy.wait(3000);
 
       publishPost(cy);
-      cy.wait(3000);
+      cy.wait(5000);
 
-      validatePost(cy,configuration.URL_GHOST + title, title );
-      cy.wait(10000);
+      validatePost(cy);
+      cy.wait(3000);
     })
    
   })
@@ -1070,10 +1070,10 @@ describe('Escenarios', () => {
       cy.wait(3000);
 
       publishPost(cy);
-      cy.wait(3000);
+      cy.wait(5000);
 
-      validatePost(cy,configuration.URL_GHOST + title, title );
-      cy.wait(10000);
+      validatePost(cy);
+      cy.wait(3000);
     })
    
   })
@@ -1098,10 +1098,10 @@ describe('Escenarios', () => {
       cy.wait(3000);
 
       publishPost(cy);
-      cy.wait(3000);
+      cy.wait(5000);
 
-      validatePost(cy,configuration.URL_GHOST + title, title );
-      cy.wait(10000);
+      validatePost(cy);
+      cy.wait(3000);
     })
    
   })
@@ -1126,24 +1126,15 @@ describe('Escenarios', () => {
       cy.wait(3000);
 
       publishPost(cy);
-      cy.wait(3000);
+      cy.wait(5000);
 
-      validatePost(cy,configuration.URL_GHOST + title, title );
-      cy.wait(10000);
+      validatePost(cy);
+      cy.wait(3000);
     })
    
   })
  
 });
-
-function getRandomInt(min, max) {
-  if(max < 0){
-    max = 0;
-  }
-  min = Math.ceil(min);
-  max = Math.floor(max);
-  return Math.floor(Math.random() * (max - min)) + min;
-};
 
 function doLogin(cy, email, password ){
   cy.get('input[class="email ember-text-field gh-input ember-view"]').type(email)
@@ -1170,14 +1161,6 @@ cy.get('button[class="settings-menu-toggle gh-btn gh-btn-editor gh-btn-icon icon
 cy.get('button[class="settings-menu-toggle gh-btn gh-btn-editor gh-btn-icon icon-only gh-btn-action-icon"]').click();
 }
 
-function deletePost(cy) {
-cy.get('button[class="settings-menu-toggle gh-btn gh-btn-editor gh-btn-icon icon-only gh-btn-action-icon"]').click();
-cy.wait(2000)
-cy.get('button[class="gh-btn gh-btn-hover-red gh-btn-icon settings-menu-delete-button"]').click();
-cy.wait(2000)
-cy.get('button[class="gh-btn gh-btn-red gh-btn-icon ember-view"]').click();
-
-}
 
 
 function publishPost(cy){
@@ -1188,22 +1171,9 @@ cy.wait(2000)
 cy.get('button[class="gh-btn gh-btn-black gh-btn-icon ember-view"]').click();
 }
 
-function seePreviewPost(cy){
-cy.get('button[class="gh-btn gh-editor-preview-trigger"]').click();
-cy.wait(2000);
+
+function validatePost(cy){
+cy.get('div[class="gh-editor-post-status"] > span > div').should('include.text', "Published");
 }
 
-function validatePost(cy, page, title){
-cy.visit(page)
-cy.get('h1[class="article-title"]').should('have.text', title)
-}
-
-function validatePreviewPost(cy, title){
-  cy.get('frame').should('not.be.undefined')
-}
-
-function validateDeletedPost(cy, title ){
-cy.get('ol > li').find('a:contains("' + title + '")').should('have.length', 0);
-
-}
 
