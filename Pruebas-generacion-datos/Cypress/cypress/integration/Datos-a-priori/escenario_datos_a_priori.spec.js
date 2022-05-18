@@ -20,9 +20,12 @@ describe('Escenarios datos a priori', () => {
       enterPostOptions(cy);
       cy.wait(3000);
 
-      let title = data[i++].title;
+      let index = i++;
+
+      let title = data[index].title;
+      let excerpt = data[index].excerpt;
       
-      writePost(cy, title);
+      writePost(cy, title, excerpt);
       cy.wait(3000);
 
       publishPost(cy);
@@ -48,9 +51,12 @@ describe('Escenarios datos a priori', () => {
       enterPostOptions(cy);
       cy.wait(3000);
 
-      let title = data[i++].title;
+      let index = i++;
+
+      let title = data[index].title;
+      let excerpt = data[index].excerpt;
       
-      writePost(cy, title);
+      writePost(cy, title, excerpt);
       cy.wait(3000);
 
       publishPost(cy);
@@ -76,9 +82,12 @@ describe('Escenarios datos a priori', () => {
       enterPostOptions(cy);
       cy.wait(3000);
 
-      let title = data[i++].title;
+      let index = i++;
+
+      let title = data[index].title;
+      let excerpt = data[index].excerpt;
       
-      writePost(cy, title);
+      writePost(cy, title, excerpt);
       cy.wait(3000);
 
       publishPost(cy);
@@ -104,9 +113,12 @@ describe('Escenarios datos a priori', () => {
       enterPostOptions(cy);
       cy.wait(3000);
 
-      let title = data[i++].title;
+      let index = i++;
+
+      let title = data[index].title;
+      let excerpt = data[index].excerpt;
       
-      writePost(cy, title);
+      writePost(cy, title, excerpt);
       cy.wait(3000);
 
       publishPost(cy);
@@ -132,9 +144,12 @@ describe('Escenarios datos a priori', () => {
       enterPostOptions(cy);
       cy.wait(3000);
 
-      let title = data[i++].title;
+      let index = i++;
+
+      let title = data[index].title;
+      let excerpt = data[index].excerpt;
       
-      writePost(cy, title);
+      writePost(cy, title, excerpt);
       cy.wait(3000);
 
       publishPost(cy);
@@ -160,9 +175,12 @@ describe('Escenarios datos a priori', () => {
       enterPostOptions(cy);
       cy.wait(3000);
 
-      let title = data[i++].title;
+      let index = i++;
+
+      let title = data[index].title;
+      let excerpt = data[index].excerpt;
       
-      writePost(cy, title);
+      writePost(cy, title, excerpt);
       cy.wait(3000);
 
       publishPost(cy);
@@ -188,9 +206,12 @@ describe('Escenarios datos a priori', () => {
       enterPostOptions(cy);
       cy.wait(3000);
 
-      let title = data[i++].title;
+      let index = i++;
+
+      let title = data[index].title;
+      let excerpt = data[index].excerpt;
       
-      writePost(cy, title);
+      writePost(cy, title, excerpt);
       cy.wait(3000);
 
       publishPost(cy);
@@ -216,9 +237,12 @@ describe('Escenarios datos a priori', () => {
       enterPostOptions(cy);
       cy.wait(3000);
 
-      let title = data[i++].title;
+      let index = i++;
+
+      let title = data[index].title;
+      let excerpt = data[index].excerpt;
       
-      writePost(cy, title);
+      writePost(cy, title, excerpt);
       cy.wait(3000);
 
       publishPost(cy);
@@ -244,9 +268,12 @@ describe('Escenarios datos a priori', () => {
       enterPostOptions(cy);
       cy.wait(3000);
 
-      let title = data[i++].title;
+      let index = i++;
+
+      let title = data[index].title;
+      let excerpt = data[index].excerpt;
       
-      writePost(cy, title);
+      writePost(cy, title, excerpt);
       cy.wait(3000);
 
       publishPost(cy);
@@ -272,9 +299,12 @@ describe('Escenarios datos a priori', () => {
       enterPostOptions(cy);
       cy.wait(3000);
 
-      let title = data[i++].title;
+      let index = i++;
+
+      let title = data[index].title;
+      let excerpt = data[index].excerpt;
       
-      writePost(cy, title);
+      writePost(cy, title, excerpt);
       cy.wait(3000);
 
       publishPost(cy);
@@ -285,850 +315,6 @@ describe('Escenarios datos a priori', () => {
     })
    
   })
- 
-  it('Crear post # 11', () => {
-    
-    cy.fixture('configuration').then((configuration)  => {
-      cy.visit(configuration.URL_GHOST_ADMIN)
-      cy.wait(3000)
-
-      var email = configuration.USERNAME
-      var password = configuration.PASSWORD
-
-      doLogin(cy, email, password);
-      cy.wait(3000);
-
-      enterPostOptions(cy);
-      cy.wait(3000);
-
-      let title = data[i++].title;
-      
-      writePost(cy, title);
-      cy.wait(3000);
-
-      publishPost(cy);
-      cy.wait(5000);
-
-      validatePost(cy);
-      cy.wait(3000);
-    })
-   
-  })
-  it('Crear post # 12', () => {
-    
-    cy.fixture('configuration').then((configuration)  => {
-      cy.visit(configuration.URL_GHOST_ADMIN)
-      cy.wait(3000)
-
-      var email = configuration.USERNAME
-      var password = configuration.PASSWORD
-
-      doLogin(cy, email, password);
-      cy.wait(3000);
-
-      enterPostOptions(cy);
-      cy.wait(3000);
-
-      let title = data[i++].title;
-      
-      writePost(cy, title);
-      cy.wait(3000);
-
-      publishPost(cy);
-      cy.wait(5000);
-
-      validatePost(cy);
-      cy.wait(3000);
-    })
-   
-  })
-  it('Crear post # 13', () => {
-    
-    cy.fixture('configuration').then((configuration)  => {
-      cy.visit(configuration.URL_GHOST_ADMIN)
-      cy.wait(3000)
-
-      var email = configuration.USERNAME
-      var password = configuration.PASSWORD
-
-      doLogin(cy, email, password);
-      cy.wait(3000);
-
-      enterPostOptions(cy);
-      cy.wait(3000);
-
-      let title = data[i++].title;
-      
-      writePost(cy, title);
-      cy.wait(3000);
-
-      publishPost(cy);
-      cy.wait(5000);
-
-      validatePost(cy);
-      cy.wait(3000);
-    })
-   
-  })
-  it('Crear post # 14', () => {
-    
-    cy.fixture('configuration').then((configuration)  => {
-      cy.visit(configuration.URL_GHOST_ADMIN)
-      cy.wait(3000)
-
-      var email = configuration.USERNAME
-      var password = configuration.PASSWORD
-
-      doLogin(cy, email, password);
-      cy.wait(3000);
-
-      enterPostOptions(cy);
-      cy.wait(3000);
-
-      let title = data[i++].title;
-      
-      writePost(cy, title);
-      cy.wait(3000);
-
-      publishPost(cy);
-      cy.wait(5000);
-
-      validatePost(cy);
-      cy.wait(3000);
-    })
-   
-  })
-  it('Crear post # 15', () => {
-    
-    cy.fixture('configuration').then((configuration)  => {
-      cy.visit(configuration.URL_GHOST_ADMIN)
-      cy.wait(3000)
-
-      var email = configuration.USERNAME
-      var password = configuration.PASSWORD
-
-      doLogin(cy, email, password);
-      cy.wait(3000);
-
-      enterPostOptions(cy);
-      cy.wait(3000);
-
-      let title = data[i++].title;
-      
-      writePost(cy, title);
-      cy.wait(3000);
-
-      publishPost(cy);
-      cy.wait(5000);
-
-      validatePost(cy);
-      cy.wait(3000);
-    })
-   
-  })
-  it('Crear post # 16', () => {
-    
-    cy.fixture('configuration').then((configuration)  => {
-      cy.visit(configuration.URL_GHOST_ADMIN)
-      cy.wait(3000)
-
-      var email = configuration.USERNAME
-      var password = configuration.PASSWORD
-
-      doLogin(cy, email, password);
-      cy.wait(3000);
-
-      enterPostOptions(cy);
-      cy.wait(3000);
-
-      let title = data[i++].title;
-      
-      writePost(cy, title);
-      cy.wait(3000);
-
-      publishPost(cy);
-      cy.wait(5000);
-
-      validatePost(cy);
-      cy.wait(3000);
-    })
-   
-  })
-  it('Crear post # 17', () => {
-    
-    cy.fixture('configuration').then((configuration)  => {
-      cy.visit(configuration.URL_GHOST_ADMIN)
-      cy.wait(3000)
-
-      var email = configuration.USERNAME
-      var password = configuration.PASSWORD
-
-      doLogin(cy, email, password);
-      cy.wait(3000);
-
-      enterPostOptions(cy);
-      cy.wait(3000);
-
-      let title = data[i++].title;
-      
-      writePost(cy, title);
-      cy.wait(3000);
-
-      publishPost(cy);
-      cy.wait(5000);
-
-      validatePost(cy);
-      cy.wait(3000);
-    })
-   
-  })
-  it('Crear post # 18', () => {
-    
-    cy.fixture('configuration').then((configuration)  => {
-      cy.visit(configuration.URL_GHOST_ADMIN)
-      cy.wait(3000)
-
-      var email = configuration.USERNAME
-      var password = configuration.PASSWORD
-
-      doLogin(cy, email, password);
-      cy.wait(3000);
-
-      enterPostOptions(cy);
-      cy.wait(3000);
-
-      let title = data[i++].title;
-      
-      writePost(cy, title);
-      cy.wait(3000);
-
-      publishPost(cy);
-      cy.wait(5000);
-
-      validatePost(cy);
-      cy.wait(3000);
-    })
-   
-  })
-  it('Crear post # 19', () => {
-    
-    cy.fixture('configuration').then((configuration)  => {
-      cy.visit(configuration.URL_GHOST_ADMIN)
-      cy.wait(3000)
-
-      var email = configuration.USERNAME
-      var password = configuration.PASSWORD
-
-      doLogin(cy, email, password);
-      cy.wait(3000);
-
-      enterPostOptions(cy);
-      cy.wait(3000);
-
-      let title = data[i++].title;
-      
-      writePost(cy, title);
-      cy.wait(3000);
-
-      publishPost(cy);
-      cy.wait(5000);
-
-      validatePost(cy);
-      cy.wait(3000);
-    })
-   
-  })
-  it('Crear post # 20', () => {
-    
-    cy.fixture('configuration').then((configuration)  => {
-      cy.visit(configuration.URL_GHOST_ADMIN)
-      cy.wait(3000)
-
-      var email = configuration.USERNAME
-      var password = configuration.PASSWORD
-
-      doLogin(cy, email, password);
-      cy.wait(3000);
-
-      enterPostOptions(cy);
-      cy.wait(3000);
-
-      let title = data[i++].title;
-      
-      writePost(cy, title);
-      cy.wait(3000);
-
-      publishPost(cy);
-      cy.wait(5000);
-
-      validatePost(cy);
-      cy.wait(3000);
-    })
-   
-  })
- 
-  it('Crear post # 21', () => {
-    
-    cy.fixture('configuration').then((configuration)  => {
-      cy.visit(configuration.URL_GHOST_ADMIN)
-      cy.wait(3000)
-
-      var email = configuration.USERNAME
-      var password = configuration.PASSWORD
-
-      doLogin(cy, email, password);
-      cy.wait(3000);
-
-      enterPostOptions(cy);
-      cy.wait(3000);
-
-      let title = data[i++].title;
-      
-      writePost(cy, title);
-      cy.wait(3000);
-
-      publishPost(cy);
-      cy.wait(5000);
-
-      validatePost(cy);
-      cy.wait(3000);
-    })
-   
-  })
-  it('Crear post # 22', () => {
-    
-    cy.fixture('configuration').then((configuration)  => {
-      cy.visit(configuration.URL_GHOST_ADMIN)
-      cy.wait(3000)
-
-      var email = configuration.USERNAME
-      var password = configuration.PASSWORD
-
-      doLogin(cy, email, password);
-      cy.wait(3000);
-
-      enterPostOptions(cy);
-      cy.wait(3000);
-
-      let title = data[i++].title;
-      
-      writePost(cy, title);
-      cy.wait(3000);
-
-      publishPost(cy);
-      cy.wait(5000);
-
-      validatePost(cy);
-      cy.wait(3000);
-    })
-   
-  })
-  it('Crear post # 23', () => {
-    
-    cy.fixture('configuration').then((configuration)  => {
-      cy.visit(configuration.URL_GHOST_ADMIN)
-      cy.wait(3000)
-
-      var email = configuration.USERNAME
-      var password = configuration.PASSWORD
-
-      doLogin(cy, email, password);
-      cy.wait(3000);
-
-      enterPostOptions(cy);
-      cy.wait(3000);
-
-      let title = data[i++].title;
-      
-      writePost(cy, title);
-      cy.wait(3000);
-
-      publishPost(cy);
-      cy.wait(5000);
-
-      validatePost(cy);
-      cy.wait(3000);
-    })
-   
-  })
-  it('Crear post # 24', () => {
-    
-    cy.fixture('configuration').then((configuration)  => {
-      cy.visit(configuration.URL_GHOST_ADMIN)
-      cy.wait(3000)
-
-      var email = configuration.USERNAME
-      var password = configuration.PASSWORD
-
-      doLogin(cy, email, password);
-      cy.wait(3000);
-
-      enterPostOptions(cy);
-      cy.wait(3000);
-
-      let title = data[i++].title;
-      
-      writePost(cy, title);
-      cy.wait(3000);
-
-      publishPost(cy);
-      cy.wait(5000);
-
-      validatePost(cy);
-      cy.wait(3000);
-    })
-   
-  })
-  it('Crear post # 25', () => {
-    
-    cy.fixture('configuration').then((configuration)  => {
-      cy.visit(configuration.URL_GHOST_ADMIN)
-      cy.wait(3000)
-
-      var email = configuration.USERNAME
-      var password = configuration.PASSWORD
-
-      doLogin(cy, email, password);
-      cy.wait(3000);
-
-      enterPostOptions(cy);
-      cy.wait(3000);
-
-      let title = data[i++].title;
-      
-      writePost(cy, title);
-      cy.wait(3000);
-
-      publishPost(cy);
-      cy.wait(5000);
-
-      validatePost(cy);
-      cy.wait(3000);
-    })
-   
-  })
-  it('Crear post # 26', () => {
-    
-    cy.fixture('configuration').then((configuration)  => {
-      cy.visit(configuration.URL_GHOST_ADMIN)
-      cy.wait(3000)
-
-      var email = configuration.USERNAME
-      var password = configuration.PASSWORD
-
-      doLogin(cy, email, password);
-      cy.wait(3000);
-
-      enterPostOptions(cy);
-      cy.wait(3000);
-
-      let title = data[i++].title;
-      
-      writePost(cy, title);
-      cy.wait(3000);
-
-      publishPost(cy);
-      cy.wait(5000);
-
-      validatePost(cy);
-      cy.wait(3000);
-    })
-   
-  })
-  it('Crear post # 27', () => {
-    
-    cy.fixture('configuration').then((configuration)  => {
-      cy.visit(configuration.URL_GHOST_ADMIN)
-      cy.wait(3000)
-
-      var email = configuration.USERNAME
-      var password = configuration.PASSWORD
-
-      doLogin(cy, email, password);
-      cy.wait(3000);
-
-      enterPostOptions(cy);
-      cy.wait(3000);
-
-      let title = data[i++].title;
-      
-      writePost(cy, title);
-      cy.wait(3000);
-
-      publishPost(cy);
-      cy.wait(5000);
-
-      validatePost(cy);
-      cy.wait(3000);
-    })
-   
-  })
-  it('Crear post # 28', () => {
-    
-    cy.fixture('configuration').then((configuration)  => {
-      cy.visit(configuration.URL_GHOST_ADMIN)
-      cy.wait(3000)
-
-      var email = configuration.USERNAME
-      var password = configuration.PASSWORD
-
-      doLogin(cy, email, password);
-      cy.wait(3000);
-
-      enterPostOptions(cy);
-      cy.wait(3000);
-
-      let title = data[i++].title;
-      
-      writePost(cy, title);
-      cy.wait(3000);
-
-      publishPost(cy);
-      cy.wait(5000);
-
-      validatePost(cy);
-      cy.wait(3000);
-    })
-   
-  })
-  it('Crear post # 29', () => {
-    
-    cy.fixture('configuration').then((configuration)  => {
-      cy.visit(configuration.URL_GHOST_ADMIN)
-      cy.wait(3000)
-
-      var email = configuration.USERNAME
-      var password = configuration.PASSWORD
-
-      doLogin(cy, email, password);
-      cy.wait(3000);
-
-      enterPostOptions(cy);
-      cy.wait(3000);
-
-      let title = data[i++].title;
-      
-      writePost(cy, title);
-      cy.wait(3000);
-
-      publishPost(cy);
-      cy.wait(5000);
-
-      validatePost(cy);
-      cy.wait(3000);
-    })
-   
-  })
-  it('Crear post # 30', () => {
-    
-    cy.fixture('configuration').then((configuration)  => {
-      cy.visit(configuration.URL_GHOST_ADMIN)
-      cy.wait(3000)
-
-      var email = configuration.USERNAME
-      var password = configuration.PASSWORD
-
-      doLogin(cy, email, password);
-      cy.wait(3000);
-
-      enterPostOptions(cy);
-      cy.wait(3000);
-
-      let title = data[i++].title;
-      
-      writePost(cy, title);
-      cy.wait(3000);
-
-      publishPost(cy);
-      cy.wait(5000);
-
-      validatePost(cy);
-      cy.wait(3000);
-    })
-   
-  })
- 
-  it('Crear post # 31', () => {
-    
-    cy.fixture('configuration').then((configuration)  => {
-      cy.visit(configuration.URL_GHOST_ADMIN)
-      cy.wait(3000)
-
-      var email = configuration.USERNAME
-      var password = configuration.PASSWORD
-
-      doLogin(cy, email, password);
-      cy.wait(3000);
-
-      enterPostOptions(cy);
-      cy.wait(3000);
-
-      let title = data[i++].title;
-      
-      writePost(cy, title);
-      cy.wait(3000);
-
-      publishPost(cy);
-      cy.wait(5000);
-
-      validatePost(cy);
-      cy.wait(3000);
-    })
-   
-  })
-  it('Crear post # 32', () => {
-    
-    cy.fixture('configuration').then((configuration)  => {
-      cy.visit(configuration.URL_GHOST_ADMIN)
-      cy.wait(3000)
-
-      var email = configuration.USERNAME
-      var password = configuration.PASSWORD
-
-      doLogin(cy, email, password);
-      cy.wait(3000);
-
-      enterPostOptions(cy);
-      cy.wait(3000);
-
-      let title = data[i++].title;
-      
-      writePost(cy, title);
-      cy.wait(3000);
-
-      publishPost(cy);
-      cy.wait(5000);
-
-      validatePost(cy);
-      cy.wait(3000);
-    })
-   
-  })
-  it('Crear post # 33', () => {
-    
-    cy.fixture('configuration').then((configuration)  => {
-      cy.visit(configuration.URL_GHOST_ADMIN)
-      cy.wait(3000)
-
-      var email = configuration.USERNAME
-      var password = configuration.PASSWORD
-
-      doLogin(cy, email, password);
-      cy.wait(3000);
-
-      enterPostOptions(cy);
-      cy.wait(3000);
-
-      let title = data[i++].title;
-      
-      writePost(cy, title);
-      cy.wait(3000);
-
-      publishPost(cy);
-      cy.wait(5000);
-
-      validatePost(cy);
-      cy.wait(3000);
-    })
-   
-  })
-  it('Crear post # 34', () => {
-    
-    cy.fixture('configuration').then((configuration)  => {
-      cy.visit(configuration.URL_GHOST_ADMIN)
-      cy.wait(3000)
-
-      var email = configuration.USERNAME
-      var password = configuration.PASSWORD
-
-      doLogin(cy, email, password);
-      cy.wait(3000);
-
-      enterPostOptions(cy);
-      cy.wait(3000);
-
-      let title = data[i++].title;
-      
-      writePost(cy, title);
-      cy.wait(3000);
-
-      publishPost(cy);
-      cy.wait(5000);
-
-      validatePost(cy);
-      cy.wait(3000);
-    })
-   
-  })
-  it('Crear post # 35', () => {
-    
-    cy.fixture('configuration').then((configuration)  => {
-      cy.visit(configuration.URL_GHOST_ADMIN)
-      cy.wait(3000)
-
-      var email = configuration.USERNAME
-      var password = configuration.PASSWORD
-
-      doLogin(cy, email, password);
-      cy.wait(3000);
-
-      enterPostOptions(cy);
-      cy.wait(3000);
-
-      let title = data[i++].title;
-      
-      writePost(cy, title);
-      cy.wait(3000);
-
-      publishPost(cy);
-      cy.wait(5000);
-
-      validatePost(cy);
-      cy.wait(3000);
-    })
-   
-  })
-  it('Crear post # 36', () => {
-    
-    cy.fixture('configuration').then((configuration)  => {
-      cy.visit(configuration.URL_GHOST_ADMIN)
-      cy.wait(3000)
-
-      var email = configuration.USERNAME
-      var password = configuration.PASSWORD
-
-      doLogin(cy, email, password);
-      cy.wait(3000);
-
-      enterPostOptions(cy);
-      cy.wait(3000);
-
-      let title = data[i++].title;
-      
-      writePost(cy, title);
-      cy.wait(3000);
-
-      publishPost(cy);
-      cy.wait(5000);
-
-      validatePost(cy);
-      cy.wait(3000);
-    })
-   
-  })
-  it('Crear post # 37', () => {
-    
-    cy.fixture('configuration').then((configuration)  => {
-      cy.visit(configuration.URL_GHOST_ADMIN)
-      cy.wait(3000)
-
-      var email = configuration.USERNAME
-      var password = configuration.PASSWORD
-
-      doLogin(cy, email, password);
-      cy.wait(3000);
-
-      enterPostOptions(cy);
-      cy.wait(3000);
-
-      let title = data[i++].title;
-      
-      writePost(cy, title);
-      cy.wait(3000);
-
-      publishPost(cy);
-      cy.wait(5000);
-
-      validatePost(cy);
-      cy.wait(3000);
-    })
-   
-  })
-  it('Crear post # 38', () => {
-    
-    cy.fixture('configuration').then((configuration)  => {
-      cy.visit(configuration.URL_GHOST_ADMIN)
-      cy.wait(3000)
-
-      var email = configuration.USERNAME
-      var password = configuration.PASSWORD
-
-      doLogin(cy, email, password);
-      cy.wait(3000);
-
-      enterPostOptions(cy);
-      cy.wait(3000);
-
-      let title = data[i++].title;
-      
-      writePost(cy, title);
-      cy.wait(3000);
-
-      publishPost(cy);
-      cy.wait(5000);
-
-      validatePost(cy);
-      cy.wait(3000);
-    })
-   
-  })
-  it('Crear post # 39', () => {
-    
-    cy.fixture('configuration').then((configuration)  => {
-      cy.visit(configuration.URL_GHOST_ADMIN)
-      cy.wait(3000)
-
-      var email = configuration.USERNAME
-      var password = configuration.PASSWORD
-
-      doLogin(cy, email, password);
-      cy.wait(3000);
-
-      enterPostOptions(cy);
-      cy.wait(3000);
-
-      let title = data[i++].title;
-      
-      writePost(cy, title);
-      cy.wait(3000);
-
-      publishPost(cy);
-      cy.wait(5000);
-
-      validatePost(cy);
-      cy.wait(3000);
-    })
-   
-  })
-  it('Crear post # 40', () => {
-    
-    cy.fixture('configuration').then((configuration)  => {
-      cy.visit(configuration.URL_GHOST_ADMIN)
-      cy.wait(3000)
-
-      var email = configuration.USERNAME
-      var password = configuration.PASSWORD
-
-      doLogin(cy, email, password);
-      cy.wait(3000);
-
-      enterPostOptions(cy);
-      cy.wait(3000);
-
-      let title = data[i++].title;
-      
-      writePost(cy, title);
-      cy.wait(3000);
-
-      publishPost(cy);
-      cy.wait(5000);
-
-      validatePost(cy);
-      cy.wait(3000);
-    })
-   
-  })
- 
 });
 
 function doLogin(cy, email, password ){
@@ -1143,7 +329,7 @@ function enterPostOptions(cy){
   cy.get('a[class="ember-view gh-btn gh-btn-primary view-actions-top-row"]').click();
 }
 
-function writePost(cy, text) {
+function writePost(cy, text, text_extract) {
 let selector = 'textarea[class="gh-editor-title ember-text-area gh-input ember-view"]';
 
 if(text === ''){
@@ -1153,6 +339,9 @@ if(text === ''){
 }
 
 cy.get('button[class="settings-menu-toggle gh-btn gh-btn-editor gh-btn-icon icon-only gh-btn-action-icon"]').click();
+
+cy.get('textarea[id ="custom-excerpt"]').type(text_extract);
+cy.wait(2000)
 cy.get('button[class="settings-menu-toggle gh-btn gh-btn-editor gh-btn-icon icon-only gh-btn-action-icon"]').click();
 }
 
