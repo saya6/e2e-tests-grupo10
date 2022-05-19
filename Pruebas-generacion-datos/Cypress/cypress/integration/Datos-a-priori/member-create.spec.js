@@ -1,4 +1,5 @@
 import 'cypress-each'
+import 'cypress-repeat'
 // Instructions
 /*
     1. Install 
