@@ -13,3 +13,7 @@ Test-ghost-v4.45.0-min/Kraken/node_modules/
 Test-ghost-v4.45.0-min/Cypress/cypress/videos
 
 Report/node_modules/
+
+Pruebas-generacion-datos/Cypress/node_modules/
+Pruebas-generacion-datos/Cypress/images/
+Pruebas-generacion-datos/Cypress/cypress/videos/
