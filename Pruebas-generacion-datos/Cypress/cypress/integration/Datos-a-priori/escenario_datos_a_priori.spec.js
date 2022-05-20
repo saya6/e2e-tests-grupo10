@@ -1,4 +1,4 @@
-const data = require("./MOCK_DATA.json");
+const data = require("./MOCK_DATA_POST.json");
 var i = 0;
 
 describe('Escenarios datos a priori', () => {
