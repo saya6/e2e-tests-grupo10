@@ -37,3 +37,7 @@ URL version `4.45.0`: http://estudiantesmiso.space:2368/ghost/#
 `make run-cypress-data-tests`
 
 O en su defecto: ubicarse en la carpeta Pruebas-generacion-datos/Cypress, luego ejecutar el comando npm install y finalmente cypress run --headless
+
+#### Incidencias
+ URL del registro de incidencias: [Repositorio](https://github.com/cgarciaa1/Incidencias-proyecto-pruebas-automatizadas/issues)
+
