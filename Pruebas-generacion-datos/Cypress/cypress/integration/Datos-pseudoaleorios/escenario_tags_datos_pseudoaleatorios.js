@@ -310,20 +310,38 @@ function enterTagOptions(cy) {
   cy.wait(2000);
 }
 
-function writeTag(cy, text, stepNumber, imageFolder) {
-  let selector = 'input[name="name"]';
-
-  if (text === "") {
-    cy.get(selector).clear();
-  } else {
-    cy.get(selector).type(text);
+function writeTag(cy, name, slug, description) {
+  if (name != "") {
+    writeTagName(cy, name);
+  }
+  cy.wait(1000);
+  if (slug != "") {
+    writeTagSlug(cy, slug);
+  }
+  cy.wait(1000);
+  if (description != "") {
+    writeTagDescription(cy, description);
   }
   cy.wait(1000);
   cy.get(
     'button[class="gh-btn gh-btn-primary gh-btn-icon ember-view"]'
   ).click();
-  cy.screenshot(imageFolder + "/" + stepNumber + ".write tag info");
   cy.wait(4000);
+}
+
+function writeTagName(cy, text) {
+  let selector = 'input[name="name"]';
+  cy.get(selector).type(text);
+}
+
+function writeTagSlug(cy, text) {
+  let selector = 'input[name="slug"]';
+  cy.get(selector).clear().type(text, {force: true});
+}
+
+function writeTagDescription(cy, text) {
+  let selector = 'textarea[name="description"]';
+  cy.get(selector).type(text);
 }
 
 function validateTag(cy, tagName) {
