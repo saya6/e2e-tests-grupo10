@@ -28,10 +28,8 @@ describe('Escenarios datos a priori', () => {
       writePost(cy, title, excerpt);
       cy.wait(3000);
 
-      publishPost(cy);
-      cy.wait(5000);
-
-      validatePost(cy);
+      validatePostByStatus(cy, "New");
+      cleanPage(cy);
       cy.wait(3000);
     })
    
@@ -93,7 +91,8 @@ describe('Escenarios datos a priori', () => {
       publishPost(cy);
       cy.wait(5000);
 
-      validatePost(cy);
+      validatePostByStatus(cy, "Draft");
+      cleanPage(cy);
       cy.wait(3000);
     })
    
@@ -358,6 +357,18 @@ cy.get('button[class="gh-btn gh-btn-black gh-btn-icon ember-view"]').click();
 
 function validatePost(cy){
 cy.get('div[class="gh-editor-post-status"] > span > div').should('include.text', "Published");
+}
+
+function validatePostByStatus(cy, status){
+cy.get('div[class="gh-editor-post-status"] > span > div').should('include.text', status);
+}
+
+function cleanPage(cy){
+  
+  cy.get('textarea[class="gh-editor-title ember-text-area gh-input ember-view"]').clear();
+  cy.get('button[class="settings-menu-toggle gh-btn gh-btn-editor gh-btn-icon icon-only gh-btn-action-icon"]').click();
+  cy.get('textarea[id ="custom-excerpt"]').clear();
+  cy.get('button[class="settings-menu-toggle gh-btn gh-btn-editor gh-btn-icon icon-only gh-btn-action-icon"]').click();
 }
 
 
