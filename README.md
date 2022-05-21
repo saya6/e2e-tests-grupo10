@@ -1,4 +1,8 @@
 ## Listado de escenarios de pruebas (120) y funcionalidades principales (4):
+
+### Descripción del uso de estrategias de generación de datos:
+Se agrega el enlace de la página de la [Wiki](https://github.com/saya6/e2e-tests-grupo10/wiki/Estrategias-de-generaci%C3%B3n-de-datos-para-pruebas)
+
 ### Funcionalidades:
 * Iniciar sesión.
 * Creación de posts
