@@ -36,3 +36,8 @@ run-all-cypress-test: run-cypress-test-4-45-0 run-cypress-test-4-0-0 run-cypress
 run-all-kraken-test: run-kraken-test-4-45-0    run-kraken-test-4-0-0 run-kraken-test-4-45-0-min
 
 run-all-tests: run-all-cypress-test    run-all-kraken-test    run-visual-regression
+
+# DATA TESTS TARGETS
+
+run-cypress-data-tests:
+	cd Pruebas-generacion-datos/Cypress && cypress run --headless && cd ../..
