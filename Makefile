@@ -40,4 +40,4 @@ run-all-tests: run-all-cypress-test    run-all-kraken-test    run-visual-regress
 # DATA TESTS TARGETS
 
 run-cypress-data-tests:
-	cd Pruebas-generacion-datos/Cypress && cypress run --headless && cd ../..
+	cd Pruebas-generacion-datos/Cypress && npm install && cypress run --headless && cd ../..
