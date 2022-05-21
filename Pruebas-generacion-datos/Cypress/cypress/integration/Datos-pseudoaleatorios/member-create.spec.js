@@ -14,20 +14,13 @@ let member_pages = {
     member_new: 'http://estudiantesmiso.space:2368/ghost/#/members/new'
 
 }
-let member_configuration = {
-    "USERNAME": "grupo10@uniandes.edu.co",
-    "PASSWORD": "mMCDL6mWRAWyKUC",
-    "URL_GHOST" : "http://estudiantesmiso.space:2368/",
-    "URL_GHOST_ADMIN" : "http://estudiantesmiso.space:2368/ghost/"
-}
-
 
 //Scenario 1. Create new member just with name and email.
 describe('Scenario 1. Create New Member just with name and email.', () => {
     beforeEach(()=>{
         cy.viewport(1920, 1080)
-        cy.fixture('configuration').then((member_configuration)  => {
-            cy.visit(member_configuration.URL_GHOST_ADMIN)
+        cy.fixture('configuration').then((configuration)  => {
+            cy.visit(configuration.URL_GHOST_ADMIN)
             cy.wait(3000)
         })
         cy.wait(7000)
@@ -37,9 +30,9 @@ describe('Scenario 1. Create New Member just with name and email.', () => {
             cy.request("GET", "https://api.mockaroo.com/api/99fed660?count=1&key=9848bfa0", {
                 
             }).then((data) => {
-                cy.fixture('configuration').then((member_configuration)  => {
-                    var email = member_configuration.USERNAME
-                    var password = member_configuration.PASSWORD
+                cy.fixture('configuration').then((configuration)  => {
+                    var email = configuration.USERNAME
+                    var password = configuration.PASSWORD
                     member_create_login(cy, email, password);
                     cy.wait(1000)
                     // Generate 5 ramdom members from the member_apriori.scenario_1 variable
@@ -65,8 +58,8 @@ describe('Scenario 1. Create New Member just with name and email.', () => {
 describe('Scenario 2. Create members with excess characters then fix them.', () => {
     beforeEach(()=>{
         cy.viewport(1920, 1080)
-        cy.fixture('configuration').then((member_configuration)  => {
-            cy.visit(member_configuration.URL_GHOST_ADMIN)
+        cy.fixture('configuration').then((configuration)  => {
+            cy.visit(configuration.URL_GHOST_ADMIN)
             cy.wait(3000)
         })
         cy.wait(7000)
@@ -76,9 +69,9 @@ describe('Scenario 2. Create members with excess characters then fix them.', () 
         cy.request("GET", "https://api.mockaroo.com/api/99fed660?count=1&key=9848bfa0", {
                 
         }).then((data) => {
-            cy.fixture('configuration').then((member_configuration)  => {
-                var email = member_configuration.USERNAME
-                var password = member_configuration.PASSWORD
+            cy.fixture('configuration').then((configuration)  => {
+                var email = configuration.USERNAME
+                var password = configuration.PASSWORD
                 member_create_login(cy, email, password);
                 cy.wait(1000)
                 // Generate 5 ramdom members from the member_apriori.scenario_1 variable
