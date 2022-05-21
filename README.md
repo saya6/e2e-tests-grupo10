@@ -31,6 +31,9 @@ Para facilitar las pruebas se desplegó en un servidor propio la plataforma Ghos
 URL version `4.45.0`: http://estudiantesmiso.space:2368/ghost/#
 
 ## Pruebas con Cypress de validación de datos:
+
+Los scripts de las pruebas se encuentran en la carpeta Pruebas-generacion-datos/Cypress 
+
 ### Instrucciones para ejecutar los escenarios de manera local:
 #### Requisitos (Linux/MacOS)
 - NodeJS v16.14.2
