@@ -1,10 +1,6 @@
-import 'cypress-each'
-import 'cypress-repeat'
 // Instructions
 /*
-    1. Install 
-    npm i -D cypress-each
-    2. Run tests
+    1. Run tests
     cd Pruebas-generacion-datos/Cypress
     cypress run --spec cypress/integration/Datos-a-priori/member-create.spec.js
 */
@@ -18,7 +14,7 @@ let member_pages = {
 const member_apriori = require("./MOCK_DATA_MEMBERS.json");
 
 //Scenario 1. Create new member just with name and email.
-member_apriori.scenario_1.forEach((scenarioData) => {
+member_apriori['scenario_1'].forEach((scenarioData) => {
     describe('Scenario 1. Create New Member just with name and email.', () => {
         beforeEach(()=>{
             cy.viewport(1920, 1080)
