@@ -1,11 +1,7 @@
-import 'cypress-each'
 const {faker} = require('@faker-js/faker');
 // Instructions
 /*
-    1. Install 
-    npm i -D cypress-each
-
-    2. Run tests
+    1. Run tests
     cd Pruebas-generacion-datos/Cypress
     cypress run --spec cypress/integration/Datos-aleatorios/member-create.spec.js
 */
