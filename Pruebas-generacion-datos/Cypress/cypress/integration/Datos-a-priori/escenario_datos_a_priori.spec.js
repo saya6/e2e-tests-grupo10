@@ -2,7 +2,8 @@ const data = require("./MOCK_DATA_POST.json");
 var i = 0;
 
 describe('Escenarios datos a priori', () => {
-  beforeEach(() => {
+  before(() => {
+    cy.request("http://estudiantesmiso.space:8000/reset-db-4-45-0")
   })
   
   it('Crear post # 1', () => {

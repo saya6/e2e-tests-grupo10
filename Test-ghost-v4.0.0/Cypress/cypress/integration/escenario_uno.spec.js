@@ -8,7 +8,8 @@ let image_file_test_4 = 'eliminar_post_no_publicado/';
 let image_file_test_5 = 'ver_previo_de_post/';
 
 describe('Escenarios', () => {
-  beforeEach(() => {
+  before(() => {
+    cy.request("http://estudiantesmiso.space:8000/reset-db-4-0-0")
   })
   
   it('Crear post', () => {

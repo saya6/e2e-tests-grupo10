@@ -4,10 +4,11 @@ var i = 0;
 describe('Escenarios datos pseudoaleatorios', () => {
   before(() => {
 
-    cy.request("GET", "https://my.api.mockaroo.com/test_pseudo_aleatorio.json?key=309d1a50", {
-    }).then((dataFromApi) => {
+    cy.request("GET", "https://my.api.mockaroo.com/test_pseudo_aleatorio.json?key=309d1a50", {}).then((dataFromApi) => {
       data = dataFromApi.body;
-      });
+    });
+
+    cy.request("http://estudiantesmiso.space:8000/reset-db-4-45-0")
  })
   
   it('Crear post # 1', () => {
