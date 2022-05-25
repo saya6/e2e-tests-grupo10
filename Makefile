@@ -7,13 +7,13 @@ run-cypress-test-4-45-0-min:
 	cd Test-ghost-v4.45.0-min/Cypress && cypress run --headless && cd ..
 
 run-cypress-test-4-0-0:
-	cd Test-ghost-v4.0.0-min/Cypress && cypress run --headless && cd ..
+	cd Test-ghost-v4.0.0/Cypress && cypress run --headless && cd ..
 
 # ALL TESTS TARGETS
 run-visual-regression:
 	cd Report && npm install && node index.js && open ./results/report.html &
 
-run-all-cypress-test: run-cypress-test-4-0-0 run-cypress-test-4-45-0-min
+run-all-cypress-test: run-cypress-test-4-45-0-min run-cypress-test-4-0-0
 
 run-all-tests: run-all-cypress-test	run-visual-regression
 
