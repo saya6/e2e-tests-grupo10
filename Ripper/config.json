@@ -1,0 +1,12 @@
+{
+    "url": "http://estudiantesmiso.space:2368/ghost/",
+    "headless": true,
+    "depthLevels": 2,
+    "inputValues": true,
+    "values": {"ember7": "grupo10@uniandes.edu.co",
+        "ember9": "mMCDL6mWRAWyKUC",
+        "passwordTwoInput": "0123456789",
+        "nameInput": "Grupo10",
+        "emailInput": "grupo10@uniandes.edu.co"},
+    "browsers": ["chromium"]
+}
