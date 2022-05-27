@@ -22,11 +22,14 @@ Se agrega el enlace de la página de la [Wiki](https://github.com/saya6/e2e-test
 
 ## Nota
 Para facilitar las pruebas se desplegó en un servidor propio la plataforma Ghost en sus versiones `4.45.0` y `4.0.0`. Dónde las credenciales de administración son las siguientes para ambas versiones: 
+
 - email : grupo10@uniandes.edu.co
 - password : mMCDL6mWRAWyKUC
 
 - URL versión `4.45.0`: http://estudiantesmiso.space:2368/ghost/#
 - URL versión `4.0.0` : http://estudiantesmiso.space:2369/ghost/#
+
+Antes de ejecutar cada prueba se ejecuta una petición a las URL http://estudiantesmiso.space:8000/reset-db-4-45-0 o http://estudiantesmiso.space:8000/reset-db-4-0-0 para limpiar la base de datos de Ghost
 
 ## Pruebas de extremo a extremo con Cypress para las versiones `4.45.0` y `4.0.0`:
 Instrucciones para ejecutar los escenarios de manera local:
