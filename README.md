@@ -49,12 +49,12 @@ Requisitos (Linux/MacOS)
 
 Nota: el script para generar el reporte de regresión visual se encuentra en la carpeta `Report`
 
+### Reporte consolidado
+[Reporte](http://estudiantesmiso.space:8080/report.html)
+
 ## Pruebas con Cypress de validación de datos:
 
 Los scripts de las pruebas se encuentran en la carpeta Pruebas-generacion-datos/Cypress 
-
-### Reporte consolidado
-[Reporte](http://estudiantesmiso.space:8080/report.html)
 
 ### Instrucciones para ejecutar los escenarios de manera local:
 #### Requisitos (Linux/MacOS)
