@@ -9,6 +9,7 @@ describe('Escenarios datos a priori', () => {
   it('Crear post # 1', () => {
     
     cy.fixture('configuration').then((configuration)  => {
+      cy.wait(6000);
       cy.visit(configuration.URL_GHOST_ADMIN)
       cy.wait(3000)
 
@@ -38,6 +39,7 @@ describe('Escenarios datos a priori', () => {
   it('Crear post # 2', () => {
     
     cy.fixture('configuration').then((configuration)  => {
+      cy.wait(6000);
       cy.visit(configuration.URL_GHOST_ADMIN)
       cy.wait(3000)
 
@@ -69,6 +71,7 @@ describe('Escenarios datos a priori', () => {
   it('Crear post # 3', () => {
     
     cy.fixture('configuration').then((configuration)  => {
+      cy.wait(6000);
       cy.visit(configuration.URL_GHOST_ADMIN)
       cy.wait(3000)
 
@@ -101,6 +104,7 @@ describe('Escenarios datos a priori', () => {
   it('Crear post # 4', () => {
     
     cy.fixture('configuration').then((configuration)  => {
+      cy.wait(6000);
       cy.visit(configuration.URL_GHOST_ADMIN)
       cy.wait(3000)
 
@@ -132,6 +136,7 @@ describe('Escenarios datos a priori', () => {
   it('Crear post # 5', () => {
     
     cy.fixture('configuration').then((configuration)  => {
+      cy.wait(6000);
       cy.visit(configuration.URL_GHOST_ADMIN)
       cy.wait(3000)
 
@@ -163,6 +168,7 @@ describe('Escenarios datos a priori', () => {
   it('Crear post # 6', () => {
     
     cy.fixture('configuration').then((configuration)  => {
+      cy.wait(6000);
       cy.visit(configuration.URL_GHOST_ADMIN)
       cy.wait(3000)
 
@@ -194,6 +200,7 @@ describe('Escenarios datos a priori', () => {
   it('Crear post # 7', () => {
     
     cy.fixture('configuration').then((configuration)  => {
+      cy.wait(6000);
       cy.visit(configuration.URL_GHOST_ADMIN)
       cy.wait(3000)
 
@@ -225,6 +232,7 @@ describe('Escenarios datos a priori', () => {
   it('Crear post # 8', () => {
     
     cy.fixture('configuration').then((configuration)  => {
+      cy.wait(6000);
       cy.visit(configuration.URL_GHOST_ADMIN)
       cy.wait(3000)
 
@@ -256,6 +264,7 @@ describe('Escenarios datos a priori', () => {
   it('Crear post # 9', () => {
     
     cy.fixture('configuration').then((configuration)  => {
+      cy.wait(6000);
       cy.visit(configuration.URL_GHOST_ADMIN)
       cy.wait(3000)
 
@@ -287,6 +296,7 @@ describe('Escenarios datos a priori', () => {
   it('Crear post # 10', () => {
     
     cy.fixture('configuration').then((configuration)  => {
+      cy.wait(6000);
       cy.visit(configuration.URL_GHOST_ADMIN)
       cy.wait(3000)
 
