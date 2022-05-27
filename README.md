@@ -25,8 +25,8 @@ Para facilitar las pruebas se desplegó en un servidor propio la plataforma Ghos
 - email : grupo10@uniandes.edu.co
 - password : mMCDL6mWRAWyKUC
 
-- URL version `4.45.0`: http://estudiantesmiso.space:2368/ghost/#
-- URL version `4.0.0` : http://estudiantesmiso.space:2369/ghost/#
+- URL versión `4.45.0`: http://estudiantesmiso.space:2368/ghost/#
+- URL versión `4.0.0` : http://estudiantesmiso.space:2369/ghost/#
 
 ## Pruebas de extremo a extremo con Cypress para las versiones `4.45.0` y `4.0.0`:
 Instrucciones para ejecutar los escenarios de manera local:
@@ -36,15 +36,15 @@ Requisitos (Linux/MacOS)
 - Librería de cypress instalada en modo global (npm install -g cypress)
 - make
 
-### Ejecucion
+### Ejecución
 
 `make run-all-cypress-test`
 
-## Ejecucion pruebas de regresion visual
+## Ejecución pruebas de regresión visual
 
 `make run-visual-regression`
 
-Nota: el script para generar el reporte de regresion visual se encuentra en la carpeta `Report`
+Nota: el script para generar el reporte de regresión visual se encuentra en la carpeta `Report`
 
 ## Pruebas con Cypress de validación de datos:
 
@@ -56,7 +56,7 @@ Los scripts de las pruebas se encuentran en la carpeta Pruebas-generacion-datos/
 - Librería de cypress instalada en modo global (npm install -g cypress)
 - make
 
-#### Ejecucion
+#### Ejecución
 `make run-cypress-data-tests`
 
 O en su defecto: ubicarse en la carpeta Pruebas-generacion-datos/Cypress, luego ejecutar el comando npm install y finalmente cypress run --headless
