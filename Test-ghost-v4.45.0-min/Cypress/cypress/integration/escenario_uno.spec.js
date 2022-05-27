@@ -3,8 +3,6 @@
 var i = 0;
 let image_file_test_1 = 'crear_post_con_exito/';
 let image_file_test_2 = 'crear_post_sin_datos/';
-let image_file_test_3 = 'eliminar_post_publicado/';
-let image_file_test_4 = 'eliminar_post_no_publicado/';
 let image_file_test_5 = 'ver_previo_de_post/';
 
 describe('Escenarios', () => {
@@ -16,6 +14,7 @@ describe('Escenarios', () => {
     
     cy.fixture('configuration').then((configuration)  => {
       i = 1;
+      cy.wait(6000)
       cy.visit(configuration.URL_GHOST_ADMIN)
       cy.wait(3000)
 
@@ -46,6 +45,7 @@ describe('Escenarios', () => {
     cy.fixture('configuration').then((configuration)  => {
       
       i = 1;
+      cy.wait(6000)
       cy.visit(configuration.URL_GHOST_ADMIN)
       cy.wait(3000)
 
@@ -74,77 +74,12 @@ describe('Escenarios', () => {
    
   })
 
-  it('Eliminar un post publicado', () => {
-    
-    cy.fixture('configuration').then((configuration)  => {
-      
-      i = 1;
-      cy.visit(configuration.URL_GHOST_ADMIN)
-      cy.wait(3000)
-
-      var email = configuration.USERNAME
-      var password = configuration.PASSWORD
-
-      doLogin(cy, email, password, image_file_test_3);
-      cy.wait(3000);
-
-      enterPostOptions(cy, image_file_test_3);
-      cy.wait(3000);
-
-      let page = "PruebaTitulo" + getRandomInt(1, 10000);
-      writePost(cy, page, image_file_test_3);
-      cy.wait(3000);
-
-      publishPost(cy, image_file_test_3);
-      cy.wait(3000);
-
-      deletePost(cy, image_file_test_3);
-      cy.wait(3000);
-
-      validateDeletedPost(cy, page, image_file_test_3);
-      cy.wait(10000);
-    });
-   
-  });
-
-
-
-it('Eliminar un post no publicado', () => {
-    
-  cy.fixture('configuration').then((configuration)  => {
-    
-    i = 1;
-    cy.visit(configuration.URL_GHOST_ADMIN)
-    cy.wait(3000)
-
-    var email = configuration.USERNAME
-    var password = configuration.PASSWORD
-
-    doLogin(cy, email, password, image_file_test_4);
-    cy.wait(3000);
-
-    enterPostOptions(cy, image_file_test_4);
-    cy.wait(3000);
-
-    let page = "PruebaTitulo" + getRandomInt(1, 10000);
-    writePost(cy, page, image_file_test_4);
-    cy.wait(5000);
-
-    deletePost(cy, image_file_test_4);
-    cy.wait(3000);
-
-    validateDeletedPost(cy, page, image_file_test_4);
-    cy.wait(10000);
-  });
- 
-});
-
-
 it('Ver el previo de un post', () => {
     
   cy.fixture('configuration').then((configuration)  => {
     
     i = 1;
+    cy.wait(6000)
     cy.visit(configuration.URL_GHOST_ADMIN)
     cy.wait(3000)
 
