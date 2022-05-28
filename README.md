@@ -31,6 +31,9 @@ Para facilitar las pruebas se desplegó en un servidor propio la plataforma Ghos
 
 Antes de ejecutar cada prueba se ejecuta una petición a las URL http://estudiantesmiso.space:8000/reset-db-4-45-0 o http://estudiantesmiso.space:8000/reset-db-4-0-0 para limpiar la base de datos de Ghost
 
+## Pruebas manuales
+Inventario de pruebas manuales ejecutadas: [Inventario](https://docs.google.com/spreadsheets/d/1XEyoGTzco-fqCSaLtrb9A4o_djU37r6Y/edit?usp=drivesdk&ouid=105489972989392301559&rtpof=true&sd=true)
+
 ## Pruebas de extremo a extremo con Cypress para las versiones `4.45.0` y `4.0.0`:
 Instrucciones para ejecutar los escenarios de manera local:
 Requisitos (Linux/MacOS)
