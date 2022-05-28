@@ -1,19 +1,21 @@
 .vscode/*.log
 
-Test-ghost-v4.0.0/Kraken/reports/
-Test-ghost-v4.0.0/Kraken/node_modules/
+# Cypress V4.0.0
 Test-ghost-v4.0.0/Cypress/cypress/videos
 
-Test-ghost-v4.45.0/Kraken/reports/
-Test-ghost-v4.45.0/Kraken/node_modules/
-Test-ghost-v4.45.0/Cypress/cypress/videos
-
-Test-ghost-v4.45.0-min/Kraken/reports/
-Test-ghost-v4.45.0-min/Kraken/node_modules/
+# Cypress V4.45.0
 Test-ghost-v4.45.0-min/Cypress/cypress/videos
 
+# Pruebas VRT
 Report/node_modules/
 
+# Pruebas de generacion de datos
 Pruebas-generacion-datos/Cypress/node_modules/
 Pruebas-generacion-datos/Cypress/images/
 Pruebas-generacion-datos/Cypress/cypress/videos/
+
+# Monkey & Ripper
+Monkeys/cypress/videos/
+Monkeys/node_modules/
+Ripper/node_modules/
+Ripper/results/

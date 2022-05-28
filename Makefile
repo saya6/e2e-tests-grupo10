@@ -15,9 +15,17 @@ run-visual-regression:
 
 run-all-cypress-test: run-cypress-test-4-45-0-min run-cypress-test-4-0-0
 
-run-all-tests: run-all-cypress-test	run-visual-regression
+run-all-tests: run-all-cypress-test run-cypress-data-tests run-visual-regression
 
 # DATA TESTS TARGETS
 
 run-cypress-data-tests:
 	cd Pruebas-generacion-datos/Cypress && npm install && cypress run --headless && cd ../..
+
+# MONKEY TEST TARGET
+run-cypress-monkey:
+	cd Monkeys/ && npm install && cypress run --headless && cd ../..
+
+# RIPPER TEST TARGET
+run-ripper:
+	cd Ripper/ && npm install && node index.js http://estudiantesmiso.space:2368/ true
