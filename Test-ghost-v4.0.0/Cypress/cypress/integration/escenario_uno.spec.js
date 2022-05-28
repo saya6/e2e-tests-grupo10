@@ -7,7 +7,8 @@ let image_file_test_5 = 'ver_previo_de_post/';
 
 describe('Escenarios', () => {
   before(() => {
-    cy.request("http://estudiantesmiso.space:8000/reset-db-4-0-0")
+    cy.request("http://estudiantesmiso.space:8000/reset-db-4-0-0");
+    cy.viewport(1920, 1080);
   })
   
   it('Crear post', () => {
