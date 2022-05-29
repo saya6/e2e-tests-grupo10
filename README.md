@@ -1,3 +1,8 @@
+## Estrategia de pruebas
+
+Aquí se encuentra el PDF de la estrategia de pruebas, la diapositiva y el video de la presentación [Estrategias de pruebas planteada y video de presentación](https://drive.google.com/drive/folders/1X21PXGE4qJaFWbZVy7mfU1LocxyefOeh)
+
+
 ## Ejecución de las pruebas planteadas para la semana 1 de la iteración de 8 semanas
 
 ### Ventajas y desventajas de las herramientas usadas:
