@@ -34,6 +34,14 @@ Antes de ejecutar cada prueba se ejecuta una petición a las URL http://estudian
 ## Pruebas manuales
 Inventario de pruebas manuales ejecutadas: [Inventario](https://docs.google.com/spreadsheets/d/1XEyoGTzco-fqCSaLtrb9A4o_djU37r6Y/edit?usp=drivesdk&ouid=105489972989392301559&rtpof=true&sd=true)
 
+## Pruebas de reconocimiento
+### Instrucciones para ejecutar las pruebas de reconocimiento:
+#### Ejecución Monkey
+`make run-cypress-monkey`
+
+#### Ejecución Ripper
+`make run-ripper`
+
 ## Pruebas de extremo a extremo con Cypress para las versiones `4.45.0` y `4.0.0`:
 Instrucciones para ejecutar los escenarios de manera local:
 Requisitos (Linux/MacOS)
@@ -72,3 +80,5 @@ O en su defecto: ubicarse en la carpeta Pruebas-generacion-datos/Cypress, luego 
 
 #### Incidencias
  URL del registro de incidencias: [Repositorio](https://github.com/saya6/e2e-tests-grupo10/issues)
+ 
+
