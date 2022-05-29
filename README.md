@@ -84,6 +84,8 @@ Los scripts de las pruebas se encuentran en la carpeta Pruebas-generacion-datos/
 O en su defecto: ubicarse en la carpeta Pruebas-generacion-datos/Cypress, luego ejecutar el comando npm install y finalmente cypress run --headless
 
 #### Incidencias
- URL del registro de incidencias: [Repositorio](https://github.com/saya6/e2e-tests-grupo10/issues)
+ URL del registro de incidencias: [Repositorio de issues](https://github.com/saya6/e2e-tests-grupo10/issues) para la semana 1 (se encontraron 10 issues)
+ 
+ Para la aplicación bajo pruebas se encontraron un total de 34 issues, tal como se evidencia en el siguiente enlace: [Issues de todas las opciones](https://github.com/cgarciaa1/Incidencias-proyecto-pruebas-automatizadas/issues)
  
 
